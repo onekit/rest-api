@@ -10,6 +10,6 @@ class DefaultController extends AbstractController
 {
     public function index()
     {
-        return new Response('',200);
+        return new Response('<h1>REST API</h1>',200);
     }
 }

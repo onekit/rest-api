@@ -22,7 +22,7 @@ class UserController extends AbstractFOSRestController
 
     /**
      * @Rest\Get("", name="user_list")
-     * @Rest\View()
+     * @Rest\View(serializerGroups={"user_list"})
      */
     public function userList()
     {
@@ -31,34 +31,29 @@ class UserController extends AbstractFOSRestController
 
     /**
      * @Rest\Post("", name="user_create")
-     * @Sensio\ParamConverter("user", converter="doctrine.orm")
-     * @param User $user
+     * @Rest\View(statusCode=201)
      */
     public function userCreate($user)
     {
-//        //TODO user manager method (create)
-//        $user = $this->userManager->create($request);
-//        $status = $user ? Response::HTTP_CREATED : Response::HTTP_BAD_REQUEST;
-//
-//        return new JsonResponse([],Response::HTTP_CREATED);
+        //TODO: add param converter for user creation
+       return $this->userManager->create($user);
     }
 
     /**
      * @Rest\Get("/{id}", name="user_get", requirements={"id" = "\d+"})
-     * @Sensio\ParamConverter("user", converter="doctrine.orm")
-     * @Rest\View(serializerGroups={"default", "user"})
-     *
-     * @param User $user
-     * @return User
+     * @Rest\View(serializerGroups={"user_get"})
+     * @param $id
+     * @return User|null
      */
-    public function userGet(User $user)
+    public function userGet($id)
     {
-        return $this->userManager->find($user);
+        return $this->userManager->find($id);
     }
 
 
     /**
      * @Rest\Delete("/{id}", name="user_delete")
+     * @Rest\View(statusCode=204)
      * @param $id
      * @return array
      */
