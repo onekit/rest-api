@@ -1,3 +1,9 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+default:
+    path: /
+    controller: App\Controller\DefaultController::index
+
+api_routes:
+  resource: "../src/Controller/Api"
+  type: annotation
+  prefix: /api
+  defaults: { _format: json }
