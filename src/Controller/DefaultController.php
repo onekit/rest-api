@@ -8,8 +8,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends AbstractController
 {
-    public function index()
+    public function index(): Response
     {
-        return new Response('<h1>REST API</h1>',200);
+        return new Response('REST API',200);
     }
 }

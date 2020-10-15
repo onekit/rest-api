@@ -21,6 +21,7 @@ class UserController extends AbstractFOSRestController
     }
 
     /**
+     * @Sensio\Security("has_role('IS_AUTHENTICATED_ANONYMOUSLY')")
      * @Rest\Get("", name="user_list")
      * @Rest\View(serializerGroups={"user_list"})
      */
@@ -32,6 +33,8 @@ class UserController extends AbstractFOSRestController
     /**
      * @Rest\Post("", name="user_create")
      * @Rest\View(statusCode=201)
+     * @param $user
+     * @return User
      */
     public function userCreate($user)
     {
@@ -50,18 +53,6 @@ class UserController extends AbstractFOSRestController
         return $this->userManager->find($id);
     }
 
-
-    /**
-     * @Rest\Delete("/{id}", name="user_delete")
-     * @Rest\View(statusCode=204)
-     * @param $id
-     * @return array
-     */
-    public function userDelete($id): array
-    {
-        return $this->userManager->delete($id);
-    }
-
     /**
      * @Rest\Put("/{id}", name="user_update")
      * @Sensio\ParamConverter("user", converter="doctrine.orm")
@@ -71,6 +62,18 @@ class UserController extends AbstractFOSRestController
     public function userUpdate(User $user)
     {
         return $user;
+    }
+
+    /**
+     * @Rest\Delete("/{id}", name="user_delete")
+     * @Rest\View(statusCode=204)
+     * @Sensio\Security("has_role('ROLE_ADMIN')")
+     * @param $id
+     * @return array
+     */
+    public function userDelete($id): array
+    {
+        return $this->userManager->delete($id);
     }
 
 }

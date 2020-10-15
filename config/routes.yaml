@@ -2,6 +2,9 @@ default:
     path: /
     controller: App\Controller\DefaultController::index
 
+api_login_check:
+  path: /api/login_check
+
 api_routes:
   resource: "../src/Controller/Api"
   type: annotation
