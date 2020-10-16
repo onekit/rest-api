@@ -7,9 +7,12 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Bridge\Doctrine\Validator\Constraints as DoctrineAssert;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @DoctrineAssert\UniqueEntity("email")
+ * @ORM\HasLifecycleCallbacks
  * @ORM\Table(name="user")
  */
 class User implements UserInterface
@@ -30,6 +33,7 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="json")
+     * @Groups({"user_get"})
      */
     private $roles = [];
 
@@ -60,12 +64,14 @@ class User implements UserInterface
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
+     * @Groups({"user_get"})
      */
     private $created;
 
     /**
      * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime")
+     * @Groups({"user_get"})
      */
     private $updated;
 

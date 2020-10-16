@@ -29,3 +29,9 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    app.validator.unique_user:
+        class: App\Validator\Constraints\UniqueUserValidator
+        arguments: ['@doctrine']
+        tags:
+            - { name: validator.constraint_validator, alias: app.validator.unique_user }

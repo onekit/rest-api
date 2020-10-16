@@ -2,32 +2,50 @@
 
 namespace App\Manager;
 
+use App\Entity\Input\CreateUser;
 use App\Entity\User;
 use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class UserManager
 {
     private $userRepository;
     private $em;
+    private $passwordEncoder;
 
-    public function __construct(UserRepository $userRepository, EntityManagerInterface $em)
+    public function __construct(UserRepository $userRepository, EntityManagerInterface $em, UserPasswordEncoderInterface $passwordEncoder)
     {
         $this->em = $em;
         $this->userRepository = $userRepository;
+        $this->passwordEncoder = $passwordEncoder;
     }
 
-    public function create(User $user): User
+    /**
+     * @param CreateUser $createUser
+     * @return User
+     */
+    public function createUser(CreateUser $createUser): User
     {
-        $newUser = new User();
-        $newUser->setFirstName($user->getFirstName());
-        $newUser->setLastName($user->getLastName());
-        $newUser->setEmail($user->getEmail());
-        $newUser->setPassword($user->getPassword());
-        $this->em->persist($newUser);
-        $this->em->flush();
+        $user = new User();
+        $user->setFirstName($createUser->firstName)
+        ->setLastName($createUser->lastName)
+        ->setEmail($createUser->email)
+        ->setPassword($this->passwordEncoder->encodePassword($user, $createUser->password));
 
-        return $newUser;
+        return $this->update($user, true);
+    }
+
+    public function updateUser(User $user, CreateUser $createUser): ?User
+    {
+        $user->setPhone($createUser->phone)
+            ->setFirstName($createUser->firstName)
+            ->setLastName($createUser->lastName)
+            ->setEmail($createUser->email)
+            ->setPassword($this->passwordEncoder->encodePassword($user, $createUser->password));
+
+        return $this->update($user, true);
     }
 
     public function find($id): ?User
@@ -35,33 +53,30 @@ class UserManager
         return $this->userRepository->find($id);
     }
 
-    public function all()
+    public function all(): array
     {
         return $this->userRepository->findAll();
     }
 
-    public function delete($id): array
+    public function delete($id): JsonResponse
     {
         $user = $this->find($id);
-        $handledData = [];
-        if ($user) {
-            $handledData = ['email' => $user->getEmail(), 'firstName' => $user->getFirstName(), 'lastName' => $user->getLastName()];
+        if (!$user) {
+            return new JsonResponse('User not found', 404);
         }
+        $this->em->remove($user);
+        $this->em->flush();
 
-        //TODO: delete method
-        //var_dump($handledData); exit;
-        //$this->em->remove($user);
-        //$this->em->flush();
-        return $handledData;
+        return new JsonResponse(null, 204);
     }
 
-
-    public function update(User $user, $flush = false)
+    public function update(User $user, $flush = false): User
     {
         $this->em->persist($user);
         if ($flush) {
             $this->em->flush();
         }
+        return $user;
     }
 
 }

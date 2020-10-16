@@ -12,6 +12,9 @@
             "config/routes/nelmio_api_doc.yaml"
         ]
     },
+    "symfony/expression-language": {
+        "version": "v5.1.7"
+    },
     "zircote/swagger-php": {
         "version": "3.1.0"
     }

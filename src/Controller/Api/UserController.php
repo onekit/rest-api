@@ -2,16 +2,15 @@
 
 namespace App\Controller\Api;
 
+use App\Entity\Input\CreateUser;
 use App\Entity\User;
 use App\Manager\UserManager;
-
 use FOS\RestBundle\Controller\AbstractFOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration as Sensio;
-use Nelmio\ApiDocBundle\Annotation\Model;
-use Nelmio\ApiDocBundle\Annotation\Security;
-use Swagger\Annotations as SWG;
+
 
 /**
  * @Route("/users")
@@ -34,14 +33,14 @@ class UserController extends AbstractFOSRestController
 
     /**
      * @Rest\Post("", name="user_create")
-     * @Rest\View(statusCode=201)
-     * @param $user
+     * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
+     * @Rest\View(statusCode=201, serializerGroups={"user_get"})
+     * @param CreateUser $createUser
      * @return User
      */
-    public function userCreate($user)
+    public function userCreate(CreateUser $createUser)
     {
-        //TODO: add param converter for user creation
-       return $this->userManager->create($user);
+       return $this->userManager->createUser($createUser);
     }
 
     /**
@@ -50,30 +49,33 @@ class UserController extends AbstractFOSRestController
      * @param $id
      * @return User|null
      */
-    public function userGet($id)
+    public function userGet($id): ?User
     {
         return $this->userManager->find($id);
     }
 
     /**
-     * @Rest\Put("/{id}", name="user_update")
+     * @Rest\Put("/{id}", name="user_update", requirements={"id" = "\d+"})
+     * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
      * @Sensio\ParamConverter("user", converter="doctrine.orm")
+     * @Rest\View(serializerGroups={"user_get","user_list"})
+     * @param createUser $createUser
      * @param User $user
      * @return User
      */
-    public function userUpdate(User $user)
+    public function userUpdate(createUser $createUser, User $user): User
     {
-        return $user;
+        return $this->userManager->updateUser($user, $createUser);
     }
 
     /**
      * @Rest\Delete("/{id}", name="user_delete")
      * @Rest\View(statusCode=204)
-     * @Sensio\Security("has_role('ROLE_ADMIN')")
+     * @Sensio\IsGranted("ROLE_ADMIN")
      * @param $id
-     * @return array
+     * @return JsonResponse
      */
-    public function userDelete($id): array
+    public function userDelete($id): JsonResponse
     {
         return $this->userManager->delete($id);
     }

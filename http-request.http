@@ -1,21 +1,80 @@
-GET http://127.0.0.1:8001/api/users
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4NjAwOTAsImV4cCI6MTYwMjg2MzY5MCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.Gil3i3KqGMw9ZO8_L_wg7iqRuw4Sg1UlyQBWBVZgoLP72OoKYlWRayH7m6IVtOgOx0Ay5reL1fu4l604cxLY6kYwCP9Lm82of7mMeEbEWUwQpPglps72UN0gO7d91rlN0Vb-rNJulvNbo8VK9WonhyJDUvKy41xMX6Mi_7s361IqHa-na14-kozFXU8Sm6FZOLkCXRO_qIjzFfRjzLuFr7DOTc71jiPXHZ3oASFKGNw3jdLCrDK1S2K4jx6QJ9n5KbrXE5zh8zdIZWiYAFba3J0Vsrbd8_lgx-6Bl1RlcQWVgkzh4gmKTwQwOnLuBpDYEkIjclwOW48IBHpcFKIcYckt3Tx0ZvSKfitPfKq_uBQy0xMFn4y7LDGz0RVZr24SoUxfqA8McrCxJ0B2-nejIdPEOhilAdn6_GUV6Ew7UI8tjU7_ET1og5erFteN23JqhujLAefSx35B6e116K5LoazZNmtdQNRZ02OpPNgiP4672HVWB94Lk3EmW3Jv3rgQJA0wlTYqICqmsRI9VlR9adBwwA5NCZKgt9tv1bFxO_dveitKIf78ZB0AzM9UHzBiODnvQ42axTvcc3VxvrNoviDV16xcxESIKfrImKZlgsyLNsMYJhyridtf-ctnJh6fl3sq_AIoiauecxL4jae45irPkNydxfMAVD93ZeyGJo0
-Accept: application/json
-
 ###
-POST https://127.0.0.1:8001/api/users
-Content-Type: application/json
-Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4NjAwOTAsImV4cCI6MTYwMjg2MzY5MCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.Gil3i3KqGMw9ZO8_L_wg7iqRuw4Sg1UlyQBWBVZgoLP72OoKYlWRayH7m6IVtOgOx0Ay5reL1fu4l604cxLY6kYwCP9Lm82of7mMeEbEWUwQpPglps72UN0gO7d91rlN0Vb-rNJulvNbo8VK9WonhyJDUvKy41xMX6Mi_7s361IqHa-na14-kozFXU8Sm6FZOLkCXRO_qIjzFfRjzLuFr7DOTc71jiPXHZ3oASFKGNw3jdLCrDK1S2K4jx6QJ9n5KbrXE5zh8zdIZWiYAFba3J0Vsrbd8_lgx-6Bl1RlcQWVgkzh4gmKTwQwOnLuBpDYEkIjclwOW48IBHpcFKIcYckt3Tx0ZvSKfitPfKq_uBQy0xMFn4y7LDGz0RVZr24SoUxfqA8McrCxJ0B2-nejIdPEOhilAdn6_GUV6Ew7UI8tjU7_ET1og5erFteN23JqhujLAefSx35B6e116K5LoazZNmtdQNRZ02OpPNgiP4672HVWB94Lk3EmW3Jv3rgQJA0wlTYqICqmsRI9VlR9adBwwA5NCZKgt9tv1bFxO_dveitKIf78ZB0AzM9UHzBiODnvQ42axTvcc3VxvrNoviDV16xcxESIKfrImKZlgsyLNsMYJhyridtf-ctnJh6fl3sq_AIoiauecxL4jae45irPkNydxfMAVD93ZeyGJo0
-
-{"username": "onekit@1kit.net", "password": "admin"}
-
-
-###
-POST https://127.0.0.1:8001/api/login_check
+POST https://127.0.0.1:8080/api/login_check
 Content-Type: application/json
 
 {"username": "onekit@gmail.com", "password": "admin"}
 
+> {% client.global.set("auth_token", response.body.json.token); %}
+###
+GET http://127.0.0.1:8080/api/users
+Authorization: Bearer {{auth_token}}
+Accept: application/json
 
+###
+GET http://127.0.0.1:8080/api/users
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4ODAxMDAsImV4cCI6MTYwMjg4MzcwMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.kJ4cCsVCEcFtq02x1qJR7iLJS7QiRt8L4xEVRVfPxCC7Baw0Oia7VavLBQS0noUqniT783kUutgtvX80D0KM8aicxHpL5UFmja7kh0oD_0PgzpeHR3Mqmwhr2_rLipXXcAOgSJm7Cb9EXq8PpEK0BbxqQW5oajHYN5hR4fyscoV2wVt51krxjATo_9BfOfQlDLQ-iQJ3STXy2XfQJvw9b1LVZHGGOpCvAnRRhI1RRlo1oiTCwrpArJovgf3i_VdGHehPjUwfJdYW8RQ1-N4fPzaw_C_uivLT4zNJDEZ-6FF3RXm449LtSVDPvh0ybSjUkmMXEgbL8msaPjtft-QHjxx5_gEcLdEb3LSZtwxAi7C6uaHHsLy07zW5vLWjAJysSe6BuL1mavY3zdJ4rDKeGwsl_cWcNJ_Kne2ybWLZKJA3w_979wBHGGGZEU6RcHah0FhPri1wsrwHNyzVj3aiYpY8_UzCE_iK0XvJRGvfGnlePlDdoNoYusc1pD0WY2xPX_a0DU-zPdImIabaWbWNNOIjnbKEJcHfJqVZCtXrJo6pTMuQS4vbJ8pJOB4RdWQ7HV79smW7bqkUB56IZSmbbamnU2TyCPxSZcc6jGiGRjSly7Gh-ndT4DsEHVdRW3NVHaU4zM3e62aoSUWKJtk33fLv9ta3WHpCFuT0oHdY9W8
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8080/api/users/1
+Authorization: Bearer {{auth_token}}
+Accept: application/json
+
+###
+PUT https://127.0.0.1:8080/api/users/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "email": "onekit@1kit.net",
+  "password": "admin",
+  "firstName": "Alex",
+  "lastName": "Smith",
+  "phone": "+123456789"
+}
+
+
+###
+POST https://127.0.0.1:8080/api/users
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4ODAxMDAsImV4cCI6MTYwMjg4MzcwMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.kJ4cCsVCEcFtq02x1qJR7iLJS7QiRt8L4xEVRVfPxCC7Baw0Oia7VavLBQS0noUqniT783kUutgtvX80D0KM8aicxHpL5UFmja7kh0oD_0PgzpeHR3Mqmwhr2_rLipXXcAOgSJm7Cb9EXq8PpEK0BbxqQW5oajHYN5hR4fyscoV2wVt51krxjATo_9BfOfQlDLQ-iQJ3STXy2XfQJvw9b1LVZHGGOpCvAnRRhI1RRlo1oiTCwrpArJovgf3i_VdGHehPjUwfJdYW8RQ1-N4fPzaw_C_uivLT4zNJDEZ-6FF3RXm449LtSVDPvh0ybSjUkmMXEgbL8msaPjtft-QHjxx5_gEcLdEb3LSZtwxAi7C6uaHHsLy07zW5vLWjAJysSe6BuL1mavY3zdJ4rDKeGwsl_cWcNJ_Kne2ybWLZKJA3w_979wBHGGGZEU6RcHah0FhPri1wsrwHNyzVj3aiYpY8_UzCE_iK0XvJRGvfGnlePlDdoNoYusc1pD0WY2xPX_a0DU-zPdImIabaWbWNNOIjnbKEJcHfJqVZCtXrJo6pTMuQS4vbJ8pJOB4RdWQ7HV79smW7bqkUB56IZSmbbamnU2TyCPxSZcc6jGiGRjSly7Gh-ndT4DsEHVdRW3NVHaU4zM3e62aoSUWKJtk33fLv9ta3WHpCFuT0oHdY9W8
+
+{
+  "email": "ant@1kit.net",
+  "firstName": "A",
+  "lastName": "Smith",
+  "phone": "+1444",
+  "password": "admin"
+}
+
+
+###
+
+
+###
+PUT https://127.0.0.1:8080/api/users/5
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4NzgxNzcsImV4cCI6MTYwMjg4MTc3Nywicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.MTeYxfZxJE1POrjy04ktr_ZgwVuWNF63Ab-CHhno4NVKzda_JHa4AR5OWu1AWxIll02RL2nxwmdNbxkEEXVRpPY_hVuvlBVO3AHUtYyAgT2qmNWRRwr0YpNgDeiO3KCYXhqm_5kJuXJGjG3TxFMfxQwsTlm4qmSS_AHRwgK_swHf_70lMuh9ZSC31Pn-wF2stz9ci_OAqLUDkoFc7WP_X0N6O3_jStOAHvlef6NsluUTJ3vczreV3zPpnkilw7CCpPLyx27_lEPhpIEKd6EYvgTb7dshuACGLE8zAagCcyVN11lbslQ-ZYZNLyaZdJdEqoAo5hhHnyKrDb3c0-Y-9jnqzmnsGK9yz4zJVBk3aV7oAxxD3l64qB3kbSUOKSLnVB3uPfD5aqQ375-QX8j2BtZkUxkya6dnPxkRVUJEGO8kX9khXhkubfGgcGuTUKdv435S1BM-22SPKTGRAt2x1lne2wTRit0uCD2yfmOKzX8bgPoCM-vgRm8xBfm4oRC9_U9GTkRokiH1kMEbVhwZ5YizhaiDfvJZNIV1eczveM9HEuVViyb4JYh2k5r2eCsfh132LGe8oryPfzC42D2eGgXbsF4jKKegLHMt_OGzy-gr84cXJioTVcBECgGrHhEK2OqWcBrtU_kNcHU2Q-UOOPxJzBPmYwrO_y6yNJW5Grs
+
+{
+  "email": "onekit22222@1kit.net",
+  "firstName": "A222lex",
+  "lastName": "Sh",
+  "phone": "+123412356789",
+  "password": "asasdasdmin"
+}
+
+
+###
+
+
+###
+DELETE https://127.0.0.1:8080/api/users/13
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4NzgxNzcsImV4cCI6MTYwMjg4MTc3Nywicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.MTeYxfZxJE1POrjy04ktr_ZgwVuWNF63Ab-CHhno4NVKzda_JHa4AR5OWu1AWxIll02RL2nxwmdNbxkEEXVRpPY_hVuvlBVO3AHUtYyAgT2qmNWRRwr0YpNgDeiO3KCYXhqm_5kJuXJGjG3TxFMfxQwsTlm4qmSS_AHRwgK_swHf_70lMuh9ZSC31Pn-wF2stz9ci_OAqLUDkoFc7WP_X0N6O3_jStOAHvlef6NsluUTJ3vczreV3zPpnkilw7CCpPLyx27_lEPhpIEKd6EYvgTb7dshuACGLE8zAagCcyVN11lbslQ-ZYZNLyaZdJdEqoAo5hhHnyKrDb3c0-Y-9jnqzmnsGK9yz4zJVBk3aV7oAxxD3l64qB3kbSUOKSLnVB3uPfD5aqQ375-QX8j2BtZkUxkya6dnPxkRVUJEGO8kX9khXhkubfGgcGuTUKdv435S1BM-22SPKTGRAt2x1lne2wTRit0uCD2yfmOKzX8bgPoCM-vgRm8xBfm4oRC9_U9GTkRokiH1kMEbVhwZ5YizhaiDfvJZNIV1eczveM9HEuVViyb4JYh2k5r2eCsfh132LGe8oryPfzC42D2eGgXbsF4jKKegLHMt_OGzy-gr84cXJioTVcBECgGrHhEK2OqWcBrtU_kNcHU2Q-UOOPxJzBPmYwrO_y6yNJW5Grs
 ###
