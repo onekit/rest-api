@@ -35,7 +35,7 @@ class UserManager
         return $this->userRepository->find($id);
     }
 
-    public function all(): array
+    public function all()
     {
         return $this->userRepository->findAll();
     }

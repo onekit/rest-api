@@ -9,6 +9,9 @@ use FOS\RestBundle\Controller\AbstractFOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration as Sensio;
+use Nelmio\ApiDocBundle\Annotation\Model;
+use Nelmio\ApiDocBundle\Annotation\Security;
+use Swagger\Annotations as SWG;
 
 /**
  * @Route("/users")
@@ -21,7 +24,6 @@ class UserController extends AbstractFOSRestController
     }
 
     /**
-     * @Sensio\Security("has_role('IS_AUTHENTICATED_ANONYMOUSLY')")
      * @Rest\Get("", name="user_list")
      * @Rest\View(serializerGroups={"user_list"})
      */

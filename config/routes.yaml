@@ -4,6 +4,7 @@ default:
 
 api_login_check:
   path: /api/login_check
+  defaults: { _format: json }
 
 api_routes:
   resource: "../src/Controller/Api"
