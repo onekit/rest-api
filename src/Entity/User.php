@@ -22,13 +22,13 @@ class User implements UserInterface
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"user_get", "user_list"})
+     * @Groups({"user_get", "user_list","Default"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
-     * @Groups({"user_get", "user_list"})
+     * @Groups({"user_get", "user_list","Default"})
      * @Assert\Email
      * @Assert\NotNull()
      */
@@ -36,7 +36,7 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="json")
-     * @Groups({"user_get"})
+     * @Groups({"user_get", "Default"})
      */
     private $roles = [];
 
@@ -48,7 +48,7 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"user_get", "user_list"})
+     * @Groups({"user_get", "user_list", "Default"})
      * @Assert\Length(min=2, max=255)
      */
     private $firstName;
@@ -62,9 +62,10 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=32, nullable=true)
-     * @Groups({"user_get", "user_list"})
+     * @Groups({"user_get", "user_list", "Default"})
      * @Assert\Regex(
-     *     pattern     = "/^\+[1-9]{1}[0-9]{7,11}$/i"
+     *     pattern     = "/^\+[1-9]{1}[0-9]{7,11}$/i",
+     *     htmlPattern = "^\+[1-9]{1}[0-9]{7,11}$"
      * )
      */
     private $phone;
@@ -72,14 +73,14 @@ class User implements UserInterface
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
-     * @Groups({"user_get"})
+     * @Groups({"user_get", "Default"})
      */
     private $created;
 
     /**
      * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime")
-     * @Groups({"user_get"})
+     * @Groups({"user_get", "Default"})
      */
     private $updated;
 

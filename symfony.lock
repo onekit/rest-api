@@ -12,8 +12,14 @@
             "config/routes/nelmio_api_doc.yaml"
         ]
     },
+    "symfony/asset": {
+        "version": "v5.1.7"
+    },
     "symfony/expression-language": {
         "version": "v5.1.7"
+    },
+    "symfony/twig-pack": {
+        "version": "v1.0.0"
     },
     "zircote/swagger-php": {
         "version": "3.1.0"

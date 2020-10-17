@@ -6,10 +6,8 @@ use App\Entity\Input\CreateUser;
 use App\Entity\User;
 use FOS\RestBundle\Controller\AbstractFOSRestController;
 use App\Manager\UserManager;
-use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use FOS\RestBundle\Controller\Annotations as Rest;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration as Sensio;
@@ -54,7 +52,7 @@ class UserController extends AbstractFOSRestController
         $this->userManager->assignUser($user, $createUser);
         $constraints = $validator->validate($user);
         if ($constraints->count()) {
-            return new JsonResponse($this->handleError('Validation errors', $constraints->count()));
+            return new JsonResponse(['errors' => $this->handleError($constraints)], 400);
         }
         return $this->userManager->update($user, true);
     }
@@ -83,13 +81,11 @@ class UserController extends AbstractFOSRestController
     public function userUpdate(createUser $createUser, User $user, ValidatorInterface $validator)
     {
         $user = $this->userManager->assignUser($user, $createUser);
-        $this->userManager->assignUser($user, $createUser);
         $constraints = $validator->validate($user);
         if ($constraints->count()) {
-            return new JsonResponse($this->handleError('Validation errors', $constraints));
+            return new JsonResponse(['errors' => $this->handleError($constraints)], 400);
         }
         return $this->userManager->update($user, true);
-
     }
 
     /**
@@ -104,9 +100,13 @@ class UserController extends AbstractFOSRestController
         return $this->userManager->delete($id);
     }
 
-    public function handleError($message, $data): JsonResponse
+    protected function handleError($violations): array
     {
-      var_dump($data);
-      return new JsonResponse($data);
+        $messages = [];
+        foreach ($violations as $constraint) {
+            $prop = $constraint->getPropertyPath();
+            $messages[$prop][] = $constraint->getMessage();
+        }
+        return $messages;
     }
 }
