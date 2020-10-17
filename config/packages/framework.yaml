@@ -11,6 +11,9 @@ framework:
         cookie_secure: auto
         cookie_samesite: lax
 
+    validation:
+        enabled: true
+        enable_annotations: true
     #esi: true
     #fragments: true
     php_errors:
@@ -18,7 +21,5 @@ framework:
     serializer:
         enabled: true
         enable_annotations: true
-    validation:
-        enabled: true
-        enable_annotations: true
+
 

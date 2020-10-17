@@ -13,6 +13,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration as Sensio;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 
 /**
@@ -44,11 +45,18 @@ class UserController extends AbstractFOSRestController
      * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
      * @Rest\View(statusCode=201, serializerGroups={"user_get"})
      * @param CreateUser $createUser
+     * @param ValidatorInterface $validator
      * @return User|Response
      */
-    public function userCreate(CreateUser $createUser)
+    public function userCreate(CreateUser $createUser, ValidatorInterface $validator)
     {
-       return $this->userManager->createUser($createUser);
+        $user = new User();
+        $this->userManager->assignUser($user, $createUser);
+        $constraints = $validator->validate($user);
+        if ($constraints->count()) {
+            return new JsonResponse($this->handleError('Validation errors', $constraints->count()));
+        }
+        return $this->userManager->update($user, true);
     }
 
     /**
@@ -67,18 +75,21 @@ class UserController extends AbstractFOSRestController
      * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
      * @Sensio\ParamConverter("user", converter="doctrine.orm")
      * @Rest\View(serializerGroups={"user_get","user_list"})
-     * @param Request $request
      * @param createUser $createUser
      * @param User $user
+     * @param ValidatorInterface $validator
      * @return JsonResponse|User
      */
-    public function userUpdate(Request $request, createUser $createUser, User $user)
+    public function userUpdate(createUser $createUser, User $user, ValidatorInterface $validator)
     {
-        $form = $this->createForm('App\Form\UserType', $user);
-        $form->handleRequest($request);
-        //TODO: validations errors display
+        $user = $this->userManager->assignUser($user, $createUser);
+        $this->userManager->assignUser($user, $createUser);
+        $constraints = $validator->validate($user);
+        if ($constraints->count()) {
+            return new JsonResponse($this->handleError('Validation errors', $constraints));
+        }
+        return $this->userManager->update($user, true);
 
-        return $this->userManager->updateUser($user, $createUser);
     }
 
     /**
@@ -93,24 +104,9 @@ class UserController extends AbstractFOSRestController
         return $this->userManager->delete($id);
     }
 
-    public function getErrorMessages(FormInterface $form): array
+    public function handleError($message, $data): JsonResponse
     {
-        $errors = [];
-
-        foreach ($form->getErrors() as $key => $error) {
-            if ($form->isRoot()) {
-                $errors['#'][] = $error->getMessage();
-            } else {
-                $errors[] = $error->getMessage();
-            }
-        }
-
-        foreach ($form->all() as $child) {
-            if (!$child->isValid()) {
-                $errors[$child->getName()] = $this->getErrorMessages($child);
-            }
-        }
-
-        return $errors;
+      var_dump($data);
+      return new JsonResponse($data);
     }
 }

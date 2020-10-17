@@ -16,4 +16,4 @@ fos_rest:
       - { path: "^/", priorities: [ "json" ], fallback_format: "html" }
   versioning: true
   view:
-    view_response_listener: force
+    view_response_listener: 'force'

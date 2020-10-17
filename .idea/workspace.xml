@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22d3fa87-6663-4c6e-ba35-9a49bc6f0b25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/fos_rest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/fos_rest.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http-request.http" beforeDir="false" afterPath="$PROJECT_DIR$/http-request.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s.sh" beforeDir="false" afterPath="$PROJECT_DIR$/s.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Input/CreateUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Input/CreateUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/UserManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validator/Constraints/UniqueUserValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validator/Constraints/UniqueUserValidator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validator/Constraints/UniqueUserValidator.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +170,992 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%2245ad42%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A52%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsgggmmmmf.com&quot;,&#10;  &quot;firstName&quot;: &quot;g&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+375292193525&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%2245ad42%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A52%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsgggmmmmf.com&quot;,&#10;  &quot;firstName&quot;: &quot;gggggj&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+375292193525&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22618e36%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A53%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsgggmmmmf.com&quot;,&#10;  &quot;firstName&quot;: &quot;gggggj&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+375292193525&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22618e36%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A53%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsmmmmf.com&quot;,&#10;  &quot;firstName&quot;: &quot;gggggj&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376356565656525&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22618e36%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A53%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsmmmmf.com&quot;,&#10;  &quot;firstName&quot;: &quot;gggggj&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22618e36%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A53%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsmmmmf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22618e36%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A53%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsmmmmf.com&quot;,&#10;  &quot;firstName&quot;: &quot;jjjj&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22682d62%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A53%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsmmmmf.com&quot;,&#10;  &quot;firstName&quot;: &quot;jjjj&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22682d62%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A53%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsf.com&quot;,&#10;  &quot;firstName&quot;: &quot;jjjj&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%2250ad99%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A53%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsf.com&quot;,&#10;  &quot;firstName&quot;: &quot;jjjj&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%222f1ee6%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A53%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22b488b2%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A51%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NDA2MTAsImV4cCI6MTYwMjk1NjIxMCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.D-VtwZNBEMC2Hab8qMatQFptkFgZdkpibvrzbfgupigXf4E_pUK_EXc_Z1ATnRg1jXEqGKcEayC7St248e8qXnlZrVJokKGkAA2zb6ed4au9XC6V8mREYg3GVH8VR_3MIFK4xju2CTnUt84phvF6jXN9Pbe_vQyGClQKWg_YKyS1FY95ckHPtdRyUye1SH7VAHzu2WkI9Blk2cPXQgYwCpI6bIPIccU-mnZEL9WRJN3f7koLM8yXFRtlCc_7TqbGccnbnpnHqeSKJe0L_Sw4wzEogey3qNHO65lb1d5uDeOOIKosx7Ewpcx1KVhfW3ViuZuuZ0XD-_VVW4pIM39hmS8e6rlI2UaTyD6aVj2nEYruL4l1r8w3rqbSOefV6CjBOtpAyIL9IK7cXM_boECblPXvPds9WmACHKpffP2xYWLsfQs0_YNAwzrjEpewQGqL3wFoZ71RKBIxto7fFPihYJwM7Kh41WXCIUR5APf1vH8uNvGS02wQfNy-vPvUh8Pc3YcQWeKZv2LMsWb-4z6aZTPWDxSrknyi4n-DZ6CRycZDXnMsqJLX2c3W57_VYG4jOqc91YuM3rU1Ar3GYOYZiCyXbx57Jc2lkcwpUvjxCoPF_ld3JsWZcSTCaMmRc2_vD1Cp033TZVGyJdBLAPkvBtX4jGxUW90UZrorqRZUJ6w" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22b488b2%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A51%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/login_check" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;username&quot;: &quot;onekit@gmail.com&quot;, &quot;password&quot;: &quot;admin&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22b488b2%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A51%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MzUxODksImV4cCI6MTYwMjkzODc4OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.qRfKnrVk7e1xCruzdWWRBm4u5WrpimbZo-uww8NC2ubXiMsN7AN4PGiv2wmark4jxY2XGCpSb7SzrLVKJrbZqiJB8g8jNk790_962xxUr9IzwasjZEgs-nr1wvZ4OigW6E6_Ua9yCnnz2bR_e1-jCsPcDHGR1UEqOqkt8dTZBKoKQTcKEk86E6FkpC_2-T0bb4vJOWiQQ18PWJ4B4mdjBH8Owkov83a7XzY1hH0JTfDSpOzOvxiO2uug6uh7St33YVKE7hiSeoQTWr9Exz0OocZeKx48pUQGlkeSs04B6aM6PU7ZOPcrdyd4ElPiSK6WXElm8AMd4LA3CloDNBX4JsTje-vIsR4szfPRQzLmIQX1VyC0I-WPOcT1ztLq7D3aE7gC-zPF052jxsKsdR6ZIvInkLGQsLEJvIlyhdQV0EuaPNRJJzm5C7QFAyZ3ra49aETxKPRCnDGH617IitYl78nZLJxHNQmW0Np8ck2Htj8ZRAlVyMYZ23ryRCuZGjz-D5m6WzxHxKYq_mqEJqPq4W2mZJsQ8mme9hqpZIBkn2hfPeoM6aZShaSmdo8xX6YObm5QHWQkA_AeGDLXlVx6I5b4cm-tss5tqzVCwD5M1a_FzI0j63LGPDTpL_V86TeyRztIn560hT3PN8oCeNcE4J391AhDF9PUo7qdSrxgdRw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22261573%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MzUxODksImV4cCI6MTYwMjkzODc4OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.qRfKnrVk7e1xCruzdWWRBm4u5WrpimbZo-uww8NC2ubXiMsN7AN4PGiv2wmark4jxY2XGCpSb7SzrLVKJrbZqiJB8g8jNk790_962xxUr9IzwasjZEgs-nr1wvZ4OigW6E6_Ua9yCnnz2bR_e1-jCsPcDHGR1UEqOqkt8dTZBKoKQTcKEk86E6FkpC_2-T0bb4vJOWiQQ18PWJ4B4mdjBH8Owkov83a7XzY1hH0JTfDSpOzOvxiO2uug6uh7St33YVKE7hiSeoQTWr9Exz0OocZeKx48pUQGlkeSs04B6aM6PU7ZOPcrdyd4ElPiSK6WXElm8AMd4LA3CloDNBX4JsTje-vIsR4szfPRQzLmIQX1VyC0I-WPOcT1ztLq7D3aE7gC-zPF052jxsKsdR6ZIvInkLGQsLEJvIlyhdQV0EuaPNRJJzm5C7QFAyZ3ra49aETxKPRCnDGH617IitYl78nZLJxHNQmW0Np8ck2Htj8ZRAlVyMYZ23ryRCuZGjz-D5m6WzxHxKYq_mqEJqPq4W2mZJsQ8mme9hqpZIBkn2hfPeoM6aZShaSmdo8xX6YObm5QHWQkA_AeGDLXlVx6I5b4cm-tss5tqzVCwD5M1a_FzI0j63LGPDTpL_V86TeyRztIn560hT3PN8oCeNcE4J391AhDF9PUo7qdSrxgdRw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22261573%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MzUxODksImV4cCI6MTYwMjkzODc4OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.qRfKnrVk7e1xCruzdWWRBm4u5WrpimbZo-uww8NC2ubXiMsN7AN4PGiv2wmark4jxY2XGCpSb7SzrLVKJrbZqiJB8g8jNk790_962xxUr9IzwasjZEgs-nr1wvZ4OigW6E6_Ua9yCnnz2bR_e1-jCsPcDHGR1UEqOqkt8dTZBKoKQTcKEk86E6FkpC_2-T0bb4vJOWiQQ18PWJ4B4mdjBH8Owkov83a7XzY1hH0JTfDSpOzOvxiO2uug6uh7St33YVKE7hiSeoQTWr9Exz0OocZeKx48pUQGlkeSs04B6aM6PU7ZOPcrdyd4ElPiSK6WXElm8AMd4LA3CloDNBX4JsTje-vIsR4szfPRQzLmIQX1VyC0I-WPOcT1ztLq7D3aE7gC-zPF052jxsKsdR6ZIvInkLGQsLEJvIlyhdQV0EuaPNRJJzm5C7QFAyZ3ra49aETxKPRCnDGH617IitYl78nZLJxHNQmW0Np8ck2Htj8ZRAlVyMYZ23ryRCuZGjz-D5m6WzxHxKYq_mqEJqPq4W2mZJsQ8mme9hqpZIBkn2hfPeoM6aZShaSmdo8xX6YObm5QHWQkA_AeGDLXlVx6I5b4cm-tss5tqzVCwD5M1a_FzI0j63LGPDTpL_V86TeyRztIn560hT3PN8oCeNcE4J391AhDF9PUo7qdSrxgdRw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;alexa@asdsf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22261573%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/login_check" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;username&quot;: &quot;onekit@gmail.com&quot;, &quot;password&quot;: &quot;admin&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22261573%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MDMxNjksImV4cCI6MTYwMjkwNjc2OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lOvT1WFsXbUnLMgUzNQQkf1_7M20vhUTRSdTZCXIFIxLaSlSKQRmV79Id2OP4sq0MfK85EB7fL_iVhqdoHzuhjvk3oSawuoti8A-VdcQTwe2VfHgCKM_MskAK0fBZ8Es_3eBTYDHKtjqfgNCo0J_sKjMbP0BAs6zeTrD-RTMRECNfr-dW4k8hpVLf1sgWtVw5KsjlNEHt7nhzX-Ps70q_2pgJQrQLvXuwlHh2ZWRuO6Lqn9ZWeBBLEFTFrnRCbJxnH5HC2PL6ldt4ZSHU9z2TutCxRicNFKuHNB1O1_s6aXJQUDVZeqJd3cspqZUfjq6IYlNyM_oXgTDtPet0yvTjDXRdy9Nswesq8F75zUpP75jrGpfk1t-0i4W1ZcqtraqYdkAHaTsbf5DS2q9yMmnQpulUcR0SDQQkGLbp_0XDHvE6-4uQqwG-r0zCD3GQQmcP1bEXL37PstM21091BbIuKw8DWIqpGmiAFE9pN4oFkhADjr_3KAwKZF5aAN-pnOT5_u1Pf6Wd4I7iqZLX_GnxN2_Zx3Bik0Esq5YTuwF1qnMHknYmp-XzazUwWfTSRwTINaYIk639s87cNBT_lopFa-gDdIE7iS7GPtZWGnY6Cykoz0vijarZ3ZlU3NCU3sVwQQsxGfRoSBNUFeudAGJdCFkzhs3fsu0tO_PZ-VXNM0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajmwwxzddm88j4@hhjhhf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22261573%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users/78" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MzI4NDksImV4cCI6MTYwMjkzNjQ0OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.AmnbZapvQr-Vz8nDMZy1yRJ0xSnI_ZFgr2_wFxd1jT9_Pc19Af9_63vqV5W--3Q2meKlPmviZGaPkt1LLJ57BnWdoL3Fhyo9W6Nhs5zVtIyQn-u03hQrLAMbIh5D4ct8wbZBtTNFj8yLvtPve-7LXWpO2Lp6U8uTXy4WwhiRCpusMNTFFLaZszRNPGGoy1llswgvqNboV7ayHXIr1H6frekMrNsM9zbmA_Zing9bBHzA5XzWLKFJTpgJw62D0BJ34LIJB0n6N8o6azjSNRr-gFA8HYYNWFoG6jDW4AqbOWtxwal0a00IxyG9lTpekmikuABr68o3mEAc8QNT5es6u_f5Gf0_63y56hIVtCE2AXpHfxH2zo7QzjnBQZPsMxypkZXzQMzr2wjlY3Ft-nGkbv8kB2qci136ib7CqOxBmIRudyF3Z3DQvEfK3S9RTOJh7d3PaZ8rkmSXdSgfzpCpNkPKCflMP3Cw6Rv5Mj-nWBOpwjFoyio54BEjOiD6lPsTDA19-sGQRdPE2rTq0AnOC8C7Ohnd8hBaggOJWttFPOOkMg_nUaPHWrZ-HxM2oxiXajF42ZsVNGLcYk9Qb7ZtRVbFu8ocepEcj_5cG94T7DYQ0dofvN8CqWIm1KfTzIMLSOUHuhLOE2RT_fMbywRSUxT1fKfuyx3WpE_noDFI-50" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;one2ei3t@1kit.sax&quot;,&#10;  &quot;firstName&quot;: &quot;A&quot;,&#10;  &quot;lastName&quot;: &quot;S&quot;,&#10;  &quot;phone&quot;: &quot;+123412356789&quot;,&#10;  &quot;password&quot;: &quot;asdmin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22261573%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users/90" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MzI4NDksImV4cCI6MTYwMjkzNjQ0OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.AmnbZapvQr-Vz8nDMZy1yRJ0xSnI_ZFgr2_wFxd1jT9_Pc19Af9_63vqV5W--3Q2meKlPmviZGaPkt1LLJ57BnWdoL3Fhyo9W6Nhs5zVtIyQn-u03hQrLAMbIh5D4ct8wbZBtTNFj8yLvtPve-7LXWpO2Lp6U8uTXy4WwhiRCpusMNTFFLaZszRNPGGoy1llswgvqNboV7ayHXIr1H6frekMrNsM9zbmA_Zing9bBHzA5XzWLKFJTpgJw62D0BJ34LIJB0n6N8o6azjSNRr-gFA8HYYNWFoG6jDW4AqbOWtxwal0a00IxyG9lTpekmikuABr68o3mEAc8QNT5es6u_f5Gf0_63y56hIVtCE2AXpHfxH2zo7QzjnBQZPsMxypkZXzQMzr2wjlY3Ft-nGkbv8kB2qci136ib7CqOxBmIRudyF3Z3DQvEfK3S9RTOJh7d3PaZ8rkmSXdSgfzpCpNkPKCflMP3Cw6Rv5Mj-nWBOpwjFoyio54BEjOiD6lPsTDA19-sGQRdPE2rTq0AnOC8C7Ohnd8hBaggOJWttFPOOkMg_nUaPHWrZ-HxM2oxiXajF42ZsVNGLcYk9Qb7ZtRVbFu8ocepEcj_5cG94T7DYQ0dofvN8CqWIm1KfTzIMLSOUHuhLOE2RT_fMbywRSUxT1fKfuyx3WpE_noDFI-50" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;one2ei3t@1kit.sax&quot;,&#10;  &quot;firstName&quot;: &quot;A&quot;,&#10;  &quot;lastName&quot;: &quot;S&quot;,&#10;  &quot;phone&quot;: &quot;+123412356789&quot;,&#10;  &quot;password&quot;: &quot;asdmin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22261573%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MzI4NDksImV4cCI6MTYwMjkzNjQ0OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.AmnbZapvQr-Vz8nDMZy1yRJ0xSnI_ZFgr2_wFxd1jT9_Pc19Af9_63vqV5W--3Q2meKlPmviZGaPkt1LLJ57BnWdoL3Fhyo9W6Nhs5zVtIyQn-u03hQrLAMbIh5D4ct8wbZBtTNFj8yLvtPve-7LXWpO2Lp6U8uTXy4WwhiRCpusMNTFFLaZszRNPGGoy1llswgvqNboV7ayHXIr1H6frekMrNsM9zbmA_Zing9bBHzA5XzWLKFJTpgJw62D0BJ34LIJB0n6N8o6azjSNRr-gFA8HYYNWFoG6jDW4AqbOWtxwal0a00IxyG9lTpekmikuABr68o3mEAc8QNT5es6u_f5Gf0_63y56hIVtCE2AXpHfxH2zo7QzjnBQZPsMxypkZXzQMzr2wjlY3Ft-nGkbv8kB2qci136ib7CqOxBmIRudyF3Z3DQvEfK3S9RTOJh7d3PaZ8rkmSXdSgfzpCpNkPKCflMP3Cw6Rv5Mj-nWBOpwjFoyio54BEjOiD6lPsTDA19-sGQRdPE2rTq0AnOC8C7Ohnd8hBaggOJWttFPOOkMg_nUaPHWrZ-HxM2oxiXajF42ZsVNGLcYk9Qb7ZtRVbFu8ocepEcj_5cG94T7DYQ0dofvN8CqWIm1KfTzIMLSOUHuhLOE2RT_fMbywRSUxT1fKfuyx3WpE_noDFI-50" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22222649%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MDMxNjksImV4cCI6MTYwMjkwNjc2OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lOvT1WFsXbUnLMgUzNQQkf1_7M20vhUTRSdTZCXIFIxLaSlSKQRmV79Id2OP4sq0MfK85EB7fL_iVhqdoHzuhjvk3oSawuoti8A-VdcQTwe2VfHgCKM_MskAK0fBZ8Es_3eBTYDHKtjqfgNCo0J_sKjMbP0BAs6zeTrD-RTMRECNfr-dW4k8hpVLf1sgWtVw5KsjlNEHt7nhzX-Ps70q_2pgJQrQLvXuwlHh2ZWRuO6Lqn9ZWeBBLEFTFrnRCbJxnH5HC2PL6ldt4ZSHU9z2TutCxRicNFKuHNB1O1_s6aXJQUDVZeqJd3cspqZUfjq6IYlNyM_oXgTDtPet0yvTjDXRdy9Nswesq8F75zUpP75jrGpfk1t-0i4W1ZcqtraqYdkAHaTsbf5DS2q9yMmnQpulUcR0SDQQkGLbp_0XDHvE6-4uQqwG-r0zCD3GQQmcP1bEXL37PstM21091BbIuKw8DWIqpGmiAFE9pN4oFkhADjr_3KAwKZF5aAN-pnOT5_u1Pf6Wd4I7iqZLX_GnxN2_Zx3Bik0Esq5YTuwF1qnMHknYmp-XzazUwWfTSRwTINaYIk639s87cNBT_lopFa-gDdIE7iS7GPtZWGnY6Cykoz0vijarZ3ZlU3NCU3sVwQQsxGfRoSBNUFeudAGJdCFkzhs3fsu0tO_PZ-VXNM0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajmwwxzddm88j4@hhjhhf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22222649%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MDMxNjksImV4cCI6MTYwMjkwNjc2OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lOvT1WFsXbUnLMgUzNQQkf1_7M20vhUTRSdTZCXIFIxLaSlSKQRmV79Id2OP4sq0MfK85EB7fL_iVhqdoHzuhjvk3oSawuoti8A-VdcQTwe2VfHgCKM_MskAK0fBZ8Es_3eBTYDHKtjqfgNCo0J_sKjMbP0BAs6zeTrD-RTMRECNfr-dW4k8hpVLf1sgWtVw5KsjlNEHt7nhzX-Ps70q_2pgJQrQLvXuwlHh2ZWRuO6Lqn9ZWeBBLEFTFrnRCbJxnH5HC2PL6ldt4ZSHU9z2TutCxRicNFKuHNB1O1_s6aXJQUDVZeqJd3cspqZUfjq6IYlNyM_oXgTDtPet0yvTjDXRdy9Nswesq8F75zUpP75jrGpfk1t-0i4W1ZcqtraqYdkAHaTsbf5DS2q9yMmnQpulUcR0SDQQkGLbp_0XDHvE6-4uQqwG-r0zCD3GQQmcP1bEXL37PstM21091BbIuKw8DWIqpGmiAFE9pN4oFkhADjr_3KAwKZF5aAN-pnOT5_u1Pf6Wd4I7iqZLX_GnxN2_Zx3Bik0Esq5YTuwF1qnMHknYmp-XzazUwWfTSRwTINaYIk639s87cNBT_lopFa-gDdIE7iS7GPtZWGnY6Cykoz0vijarZ3ZlU3NCU3sVwQQsxGfRoSBNUFeudAGJdCFkzhs3fsu0tO_PZ-VXNM0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajmwwxddm88j4@hhjhhf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%223d8a84%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MDMxNjksImV4cCI6MTYwMjkwNjc2OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lOvT1WFsXbUnLMgUzNQQkf1_7M20vhUTRSdTZCXIFIxLaSlSKQRmV79Id2OP4sq0MfK85EB7fL_iVhqdoHzuhjvk3oSawuoti8A-VdcQTwe2VfHgCKM_MskAK0fBZ8Es_3eBTYDHKtjqfgNCo0J_sKjMbP0BAs6zeTrD-RTMRECNfr-dW4k8hpVLf1sgWtVw5KsjlNEHt7nhzX-Ps70q_2pgJQrQLvXuwlHh2ZWRuO6Lqn9ZWeBBLEFTFrnRCbJxnH5HC2PL6ldt4ZSHU9z2TutCxRicNFKuHNB1O1_s6aXJQUDVZeqJd3cspqZUfjq6IYlNyM_oXgTDtPet0yvTjDXRdy9Nswesq8F75zUpP75jrGpfk1t-0i4W1ZcqtraqYdkAHaTsbf5DS2q9yMmnQpulUcR0SDQQkGLbp_0XDHvE6-4uQqwG-r0zCD3GQQmcP1bEXL37PstM21091BbIuKw8DWIqpGmiAFE9pN4oFkhADjr_3KAwKZF5aAN-pnOT5_u1Pf6Wd4I7iqZLX_GnxN2_Zx3Bik0Esq5YTuwF1qnMHknYmp-XzazUwWfTSRwTINaYIk639s87cNBT_lopFa-gDdIE7iS7GPtZWGnY6Cykoz0vijarZ3ZlU3NCU3sVwQQsxGfRoSBNUFeudAGJdCFkzhs3fsu0tO_PZ-VXNM0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajmwwxddm88j4@hhjhhf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%223d8a84%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5MDMxNjksImV4cCI6MTYwMjkwNjc2OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lOvT1WFsXbUnLMgUzNQQkf1_7M20vhUTRSdTZCXIFIxLaSlSKQRmV79Id2OP4sq0MfK85EB7fL_iVhqdoHzuhjvk3oSawuoti8A-VdcQTwe2VfHgCKM_MskAK0fBZ8Es_3eBTYDHKtjqfgNCo0J_sKjMbP0BAs6zeTrD-RTMRECNfr-dW4k8hpVLf1sgWtVw5KsjlNEHt7nhzX-Ps70q_2pgJQrQLvXuwlHh2ZWRuO6Lqn9ZWeBBLEFTFrnRCbJxnH5HC2PL6ldt4ZSHU9z2TutCxRicNFKuHNB1O1_s6aXJQUDVZeqJd3cspqZUfjq6IYlNyM_oXgTDtPet0yvTjDXRdy9Nswesq8F75zUpP75jrGpfk1t-0i4W1ZcqtraqYdkAHaTsbf5DS2q9yMmnQpulUcR0SDQQkGLbp_0XDHvE6-4uQqwG-r0zCD3GQQmcP1bEXL37PstM21091BbIuKw8DWIqpGmiAFE9pN4oFkhADjr_3KAwKZF5aAN-pnOT5_u1Pf6Wd4I7iqZLX_GnxN2_Zx3Bik0Esq5YTuwF1qnMHknYmp-XzazUwWfTSRwTINaYIk639s87cNBT_lopFa-gDdIE7iS7GPtZWGnY6Cykoz0vijarZ3ZlU3NCU3sVwQQsxGfRoSBNUFeudAGJdCFkzhs3fsu0tO_PZ-VXNM0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajmwwxm88j4@hhjhhf.com&quot;,&#10;  &quot;firstName&quot;: &quot;j&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+376325&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%223d8a84%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/login_check" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;username&quot;: &quot;onekit@gmail.com&quot;, &quot;password&quot;: &quot;admin&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="biscuits">
             <list>
@@ -1055,914 +2038,6 @@
           <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajfr4@8.com&quot;,&#10;  &quot;firstName&quot;: &quot;f&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="XDEBUG_SESSION" />
-                <option name="path" value="/" />
-                <option name="value" value="18281" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%22a2cf07%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTg4NzMsImV4cCI6MTYwMjkwMjQ3Mywicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.R1j7IuDfeiQhHbyaLuO0mnWEMdksJbblgDCmXnuJUzNgKSHZLvHr4nUFLJhJsQIU5HlBHT8jCHczLgsjz-dT4rRLHPacHaFr0TEWiBHpGSMa72lguKl0BIDq5YEPcMAnuHVHZ6OFjCxiHMGSn1QI1odj76sJ0a0g7OvOtme6q_yOfS3sKvnDfNgRqiXMFuksYaGmd6CEZvmn1NDObpMS72_C4qTtVgPzKE12pcWUxkhVgaDcJBaLG1lmswCJ47XDX1Z3NrDUnkJf28I0IvlAlJW-0iX7B0ZO_4Zs0HMFy7BkUDfhe31lPhTI177Ey3c_qFmeAAqYqdlyT-jYuYXb19pDY8z0Q_x9RSO-V1lZY6Q29InlI6zCHrcMJPcp4EaUvs3AIgQLC3-0ugLqQRGvN6gwOF58NnAmmwQOcWU6BcJ5dNZLuQHJriVkKn3qSL9lZDRBgW8WofvbCobl_dPg90y1twktaEgx5nLJ8AJWH6lFL73zp1pp81oLVyXFwGweF0KlctuEUl5uVe9QyKJ63DU0M0Za3iNxjHK2a0jggsIWWZ7DxJORJSGLy1j2oQrZEX-f8KOArNKeqdS1UtZ3spaeabwWWtEtjrZGUjR4h2LjmNtyZTzyFhBmHLpNLY4xC95UfGn9K9MzD4RuiZ3zCFXPKPrkN4eHIC0VgGOZh5o" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajfr4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;f&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%221f6f10%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTg4NzMsImV4cCI6MTYwMjkwMjQ3Mywicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.R1j7IuDfeiQhHbyaLuO0mnWEMdksJbblgDCmXnuJUzNgKSHZLvHr4nUFLJhJsQIU5HlBHT8jCHczLgsjz-dT4rRLHPacHaFr0TEWiBHpGSMa72lguKl0BIDq5YEPcMAnuHVHZ6OFjCxiHMGSn1QI1odj76sJ0a0g7OvOtme6q_yOfS3sKvnDfNgRqiXMFuksYaGmd6CEZvmn1NDObpMS72_C4qTtVgPzKE12pcWUxkhVgaDcJBaLG1lmswCJ47XDX1Z3NrDUnkJf28I0IvlAlJW-0iX7B0ZO_4Zs0HMFy7BkUDfhe31lPhTI177Ey3c_qFmeAAqYqdlyT-jYuYXb19pDY8z0Q_x9RSO-V1lZY6Q29InlI6zCHrcMJPcp4EaUvs3AIgQLC3-0ugLqQRGvN6gwOF58NnAmmwQOcWU6BcJ5dNZLuQHJriVkKn3qSL9lZDRBgW8WofvbCobl_dPg90y1twktaEgx5nLJ8AJWH6lFL73zp1pp81oLVyXFwGweF0KlctuEUl5uVe9QyKJ63DU0M0Za3iNxjHK2a0jggsIWWZ7DxJORJSGLy1j2oQrZEX-f8KOArNKeqdS1UtZ3spaeabwWWtEtjrZGUjR4h2LjmNtyZTzyFhBmHLpNLY4xC95UfGn9K9MzD4RuiZ3zCFXPKPrkN4eHIC0VgGOZh5o" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajfr4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;ffffff&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%221f6f10%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTg4NzMsImV4cCI6MTYwMjkwMjQ3Mywicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.R1j7IuDfeiQhHbyaLuO0mnWEMdksJbblgDCmXnuJUzNgKSHZLvHr4nUFLJhJsQIU5HlBHT8jCHczLgsjz-dT4rRLHPacHaFr0TEWiBHpGSMa72lguKl0BIDq5YEPcMAnuHVHZ6OFjCxiHMGSn1QI1odj76sJ0a0g7OvOtme6q_yOfS3sKvnDfNgRqiXMFuksYaGmd6CEZvmn1NDObpMS72_C4qTtVgPzKE12pcWUxkhVgaDcJBaLG1lmswCJ47XDX1Z3NrDUnkJf28I0IvlAlJW-0iX7B0ZO_4Zs0HMFy7BkUDfhe31lPhTI177Ey3c_qFmeAAqYqdlyT-jYuYXb19pDY8z0Q_x9RSO-V1lZY6Q29InlI6zCHrcMJPcp4EaUvs3AIgQLC3-0ugLqQRGvN6gwOF58NnAmmwQOcWU6BcJ5dNZLuQHJriVkKn3qSL9lZDRBgW8WofvbCobl_dPg90y1twktaEgx5nLJ8AJWH6lFL73zp1pp81oLVyXFwGweF0KlctuEUl5uVe9QyKJ63DU0M0Za3iNxjHK2a0jggsIWWZ7DxJORJSGLy1j2oQrZEX-f8KOArNKeqdS1UtZ3spaeabwWWtEtjrZGUjR4h2LjmNtyZTzyFhBmHLpNLY4xC95UfGn9K9MzD4RuiZ3zCFXPKPrkN4eHIC0VgGOZh5o" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajfrrs4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;ffffff&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%229abf1d%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTg4NzMsImV4cCI6MTYwMjkwMjQ3Mywicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.R1j7IuDfeiQhHbyaLuO0mnWEMdksJbblgDCmXnuJUzNgKSHZLvHr4nUFLJhJsQIU5HlBHT8jCHczLgsjz-dT4rRLHPacHaFr0TEWiBHpGSMa72lguKl0BIDq5YEPcMAnuHVHZ6OFjCxiHMGSn1QI1odj76sJ0a0g7OvOtme6q_yOfS3sKvnDfNgRqiXMFuksYaGmd6CEZvmn1NDObpMS72_C4qTtVgPzKE12pcWUxkhVgaDcJBaLG1lmswCJ47XDX1Z3NrDUnkJf28I0IvlAlJW-0iX7B0ZO_4Zs0HMFy7BkUDfhe31lPhTI177Ey3c_qFmeAAqYqdlyT-jYuYXb19pDY8z0Q_x9RSO-V1lZY6Q29InlI6zCHrcMJPcp4EaUvs3AIgQLC3-0ugLqQRGvN6gwOF58NnAmmwQOcWU6BcJ5dNZLuQHJriVkKn3qSL9lZDRBgW8WofvbCobl_dPg90y1twktaEgx5nLJ8AJWH6lFL73zp1pp81oLVyXFwGweF0KlctuEUl5uVe9QyKJ63DU0M0Za3iNxjHK2a0jggsIWWZ7DxJORJSGLy1j2oQrZEX-f8KOArNKeqdS1UtZ3spaeabwWWtEtjrZGUjR4h2LjmNtyZTzyFhBmHLpNLY4xC95UfGn9K9MzD4RuiZ3zCFXPKPrkN4eHIC0VgGOZh5o" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajfrrs4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;ffffff&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%229abf1d%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/login_check" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;username&quot;: &quot;onekit@gmail.com&quot;, &quot;password&quot;: &quot;admin&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%229abf1d%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;ajfrr4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;ffffff&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%229abf1d%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a44jjjfrr4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;ffffff&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%229abf1d%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a44jjjfffrr4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;ffffff&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%229abf1d%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a44jjjrr4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;ffffff&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%229abf1d%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a44jjjrr4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;f&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%229abf1d%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a44jjj4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;f&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2222a08a%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a44jjj4@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;f&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2222a08a%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a444@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;fffA&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%229111e5%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a444@8t.com&quot;,&#10;  &quot;firstName&quot;: &quot;fffA&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%229111e5%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a444@t.com&quot;,&#10;  &quot;firstName&quot;: &quot;fffA&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%22609a6d%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a444@t.com&quot;,&#10;  &quot;firstName&quot;: &quot;fffA&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%22609a6d%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A48%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a444@it.com&quot;,&#10;  &quot;firstName&quot;: &quot;fffA&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2271cee7%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a444@it.com&quot;,&#10;  &quot;firstName&quot;: &quot;fffA&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+14477777774&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2271cee7%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTUyMjgsImV4cCI6MTYwMjg5ODgyOCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.lnzih8V-YCe9wadyemK505UTlGq2ynYnttmJuy4uaxt-ZDp9MsfAjdNFVIqNoh7ZiXo1MsQE-WKhIDj42BlN81Ord9ZHqBxjwkCkAkOkTkIWIJsjcy_QKY03q25CwxN_YDLH-TydNKJpIL9hMbMEH-0sitsvKi6Xv_Lw1MZ83E3Vizrpz0WM7_c5NpYyxooD9Ij7jXyUI5hBwwjSB8Cva5u3wKuXrc35EFJ6vETiv73upUH5a-kYzxWpY5Twgf1GGo5frrQtBe1G2AKhbA1___DWGfEMsArHHmBjm2N9mP3_Wg5tdt1BfmGOR_-Rj3I4Gbv0QWQeq3mQyaJh1LXTi0j18GlugVj-cYGj_HJ-upKxSX8CxohzUJOPmd6JW96mS69UFTg-IAY5bWJVmM0XcirFBe0rYadKYV_szqecbDSgbjnfvYCDPI-kPE14ed7O1MwBiQ72VhM3j3h8aq6gxJhY4NP2RNrKW4tGN6dB6C5vqPROnbyDnHgC6838QCoqoL5BLslq8QaGynu45sgq2leXPLa5ZeXmjpoAR0F_qVf0tDAuqozoH43rNjjMJsW4qdPtwfMW_zYhG0V7YMOLq9468QqwAaQDQQwmjiubdbrUbKy4SkLKqiQFKHoZSu8VapnISBSIQK1uCEBB8-iLaa11O26q-_bKdRfCDRqaBOk" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a@157it.com&quot;,&#10;  &quot;firstName&quot;: &quot;fffA&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+1444&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2271cee7%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/login_check" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;username&quot;: &quot;onekit@gmail.com&quot;, &quot;password&quot;: &quot;admin&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2271cee7%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTE2MjEsImV4cCI6MTYwMjg5NTIyMSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.pm0JvO_AlpwXZkzRCZLyGmhgUFGmtlrEmraCceRSBJo0chIHHX6rZkffpcOQJ_789XtOZ48ffIiWSzu6USvjWKepBr1pRPVFJOXvBmZAAsQbkCAUk3ZrjTpRyAla7ENo-voKth_9hYRhbJbFIM3GYhYfZqp11QLDpCyoHUjt4OeZlXKvHs7UZZ84FeCGxxyFueVPc7JvN-ZWdG2CYYodauRMgFB4l1emFR-LAwU23ZhuVuMcNM4MSNqeFDP-D-caYsr-_Fu59oHd5D3nDnDyBcqkMiBeMkB3d_kJhMqdpdH6GY7bY72oHxZLI6YTVpi36Mo5ePq4tdWCgYew8dWWhz5bFV_NJRdap2oryDNCL6xBh4aoEbC1o6HINaR1Hv1batVWZEZ-6Q6yX7urmXUiro9xekOHELzgI0UV6SOb82EOvp9nbVVw6QqvsY0DWoBqk4qy6OB4yQSIXpMz5USo2pXl47TBzSrTmyw-qp00TxIaZLWxWbbB0JtpO822uwZnPYZKxpoPF6TTlw1hVoLvWQN9v1RT9VtlpHeAr1W20p4sWZnyAra6JnrgKw2BrBdBXKfNcXfbxvpXBe_Qf1hmA0ZHVz08_XCAjjdJy6NqFGuQHoxSh_4lwQsYaWNkjEPx5GWtHCywQXcnUe_X_gGC_MQny9vTa_uIzZsLCeWxf7A" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a@157it.com&quot;,&#10;  &quot;firstName&quot;: &quot;fffA&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+1444&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2271cee7%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTE2MjEsImV4cCI6MTYwMjg5NTIyMSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.pm0JvO_AlpwXZkzRCZLyGmhgUFGmtlrEmraCceRSBJo0chIHHX6rZkffpcOQJ_789XtOZ48ffIiWSzu6USvjWKepBr1pRPVFJOXvBmZAAsQbkCAUk3ZrjTpRyAla7ENo-voKth_9hYRhbJbFIM3GYhYfZqp11QLDpCyoHUjt4OeZlXKvHs7UZZ84FeCGxxyFueVPc7JvN-ZWdG2CYYodauRMgFB4l1emFR-LAwU23ZhuVuMcNM4MSNqeFDP-D-caYsr-_Fu59oHd5D3nDnDyBcqkMiBeMkB3d_kJhMqdpdH6GY7bY72oHxZLI6YTVpi36Mo5ePq4tdWCgYew8dWWhz5bFV_NJRdap2oryDNCL6xBh4aoEbC1o6HINaR1Hv1batVWZEZ-6Q6yX7urmXUiro9xekOHELzgI0UV6SOb82EOvp9nbVVw6QqvsY0DWoBqk4qy6OB4yQSIXpMz5USo2pXl47TBzSrTmyw-qp00TxIaZLWxWbbB0JtpO822uwZnPYZKxpoPF6TTlw1hVoLvWQN9v1RT9VtlpHeAr1W20p4sWZnyAra6JnrgKw2BrBdBXKfNcXfbxvpXBe_Qf1hmA0ZHVz08_XCAjjdJy6NqFGuQHoxSh_4lwQsYaWNkjEPx5GWtHCywQXcnUe_X_gGC_MQny9vTa_uIzZsLCeWxf7A" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a@157k44tgddit.com&quot;,&#10;  &quot;firstName&quot;: &quot;fffA&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+1444&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2271cee7%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTE2MjEsImV4cCI6MTYwMjg5NTIyMSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.pm0JvO_AlpwXZkzRCZLyGmhgUFGmtlrEmraCceRSBJo0chIHHX6rZkffpcOQJ_789XtOZ48ffIiWSzu6USvjWKepBr1pRPVFJOXvBmZAAsQbkCAUk3ZrjTpRyAla7ENo-voKth_9hYRhbJbFIM3GYhYfZqp11QLDpCyoHUjt4OeZlXKvHs7UZZ84FeCGxxyFueVPc7JvN-ZWdG2CYYodauRMgFB4l1emFR-LAwU23ZhuVuMcNM4MSNqeFDP-D-caYsr-_Fu59oHd5D3nDnDyBcqkMiBeMkB3d_kJhMqdpdH6GY7bY72oHxZLI6YTVpi36Mo5ePq4tdWCgYew8dWWhz5bFV_NJRdap2oryDNCL6xBh4aoEbC1o6HINaR1Hv1batVWZEZ-6Q6yX7urmXUiro9xekOHELzgI0UV6SOb82EOvp9nbVVw6QqvsY0DWoBqk4qy6OB4yQSIXpMz5USo2pXl47TBzSrTmyw-qp00TxIaZLWxWbbB0JtpO822uwZnPYZKxpoPF6TTlw1hVoLvWQN9v1RT9VtlpHeAr1W20p4sWZnyAra6JnrgKw2BrBdBXKfNcXfbxvpXBe_Qf1hmA0ZHVz08_XCAjjdJy6NqFGuQHoxSh_4lwQsYaWNkjEPx5GWtHCywQXcnUe_X_gGC_MQny9vTa_uIzZsLCeWxf7A" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a@157kit.com&quot;,&#10;  &quot;firstName&quot;: &quot;A&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+1444&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="XDEBUG_SESSION" />
-                <option name="path" value="/" />
-                <option name="value" value="18513" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2271cee7%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTE2MjEsImV4cCI6MTYwMjg5NTIyMSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.pm0JvO_AlpwXZkzRCZLyGmhgUFGmtlrEmraCceRSBJo0chIHHX6rZkffpcOQJ_789XtOZ48ffIiWSzu6USvjWKepBr1pRPVFJOXvBmZAAsQbkCAUk3ZrjTpRyAla7ENo-voKth_9hYRhbJbFIM3GYhYfZqp11QLDpCyoHUjt4OeZlXKvHs7UZZ84FeCGxxyFueVPc7JvN-ZWdG2CYYodauRMgFB4l1emFR-LAwU23ZhuVuMcNM4MSNqeFDP-D-caYsr-_Fu59oHd5D3nDnDyBcqkMiBeMkB3d_kJhMqdpdH6GY7bY72oHxZLI6YTVpi36Mo5ePq4tdWCgYew8dWWhz5bFV_NJRdap2oryDNCL6xBh4aoEbC1o6HINaR1Hv1batVWZEZ-6Q6yX7urmXUiro9xekOHELzgI0UV6SOb82EOvp9nbVVw6QqvsY0DWoBqk4qy6OB4yQSIXpMz5USo2pXl47TBzSrTmyw-qp00TxIaZLWxWbbB0JtpO822uwZnPYZKxpoPF6TTlw1hVoLvWQN9v1RT9VtlpHeAr1W20p4sWZnyAra6JnrgKw2BrBdBXKfNcXfbxvpXBe_Qf1hmA0ZHVz08_XCAjjdJy6NqFGuQHoxSh_4lwQsYaWNkjEPx5GWtHCywQXcnUe_X_gGC_MQny9vTa_uIzZsLCeWxf7A" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;a@157kit.com&quot;,&#10;  &quot;firstName&quot;: &quot;A&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+1444&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2271cee7%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users/22" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTE2MjEsImV4cCI6MTYwMjg5NTIyMSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.pm0JvO_AlpwXZkzRCZLyGmhgUFGmtlrEmraCceRSBJo0chIHHX6rZkffpcOQJ_789XtOZ48ffIiWSzu6USvjWKepBr1pRPVFJOXvBmZAAsQbkCAUk3ZrjTpRyAla7ENo-voKth_9hYRhbJbFIM3GYhYfZqp11QLDpCyoHUjt4OeZlXKvHs7UZZ84FeCGxxyFueVPc7JvN-ZWdG2CYYodauRMgFB4l1emFR-LAwU23ZhuVuMcNM4MSNqeFDP-D-caYsr-_Fu59oHd5D3nDnDyBcqkMiBeMkB3d_kJhMqdpdH6GY7bY72oHxZLI6YTVpi36Mo5ePq4tdWCgYew8dWWhz5bFV_NJRdap2oryDNCL6xBh4aoEbC1o6HINaR1Hv1batVWZEZ-6Q6yX7urmXUiro9xekOHELzgI0UV6SOb82EOvp9nbVVw6QqvsY0DWoBqk4qy6OB4yQSIXpMz5USo2pXl47TBzSrTmyw-qp00TxIaZLWxWbbB0JtpO822uwZnPYZKxpoPF6TTlw1hVoLvWQN9v1RT9VtlpHeAr1W20p4sWZnyAra6JnrgKw2BrBdBXKfNcXfbxvpXBe_Qf1hmA0ZHVz08_XCAjjdJy6NqFGuQHoxSh_4lwQsYaWNkjEPx5GWtHCywQXcnUe_X_gGC_MQny9vTa_uIzZsLCeWxf7A" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;one2ei3t@1kit.net&quot;,&#10;  &quot;firstName&quot;: &quot;A&quot;,&#10;  &quot;lastName&quot;: &quot;S&quot;,&#10;  &quot;phone&quot;: &quot;+123412356789&quot;,&#10;  &quot;password&quot;: &quot;asdmin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2271cee7%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A49%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users/22" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI4OTE2MjEsImV4cCI6MTYwMjg5NTIyMSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.pm0JvO_AlpwXZkzRCZLyGmhgUFGmtlrEmraCceRSBJo0chIHHX6rZkffpcOQJ_789XtOZ48ffIiWSzu6USvjWKepBr1pRPVFJOXvBmZAAsQbkCAUk3ZrjTpRyAla7ENo-voKth_9hYRhbJbFIM3GYhYfZqp11QLDpCyoHUjt4OeZlXKvHs7UZZ84FeCGxxyFueVPc7JvN-ZWdG2CYYodauRMgFB4l1emFR-LAwU23ZhuVuMcNM4MSNqeFDP-D-caYsr-_Fu59oHd5D3nDnDyBcqkMiBeMkB3d_kJhMqdpdH6GY7bY72oHxZLI6YTVpi36Mo5ePq4tdWCgYew8dWWhz5bFV_NJRdap2oryDNCL6xBh4aoEbC1o6HINaR1Hv1batVWZEZ-6Q6yX7urmXUiro9xekOHELzgI0UV6SOb82EOvp9nbVVw6QqvsY0DWoBqk4qy6OB4yQSIXpMz5USo2pXl47TBzSrTmyw-qp00TxIaZLWxWbbB0JtpO822uwZnPYZKxpoPF6TTlw1hVoLvWQN9v1RT9VtlpHeAr1W20p4sWZnyAra6JnrgKw2BrBdBXKfNcXfbxvpXBe_Qf1hmA0ZHVz08_XCAjjdJy6NqFGuQHoxSh_4lwQsYaWNkjEPx5GWtHCywQXcnUe_X_gGC_MQny9vTa_uIzZsLCeWxf7A" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;one2e3t@1kit.net&quot;,&#10;  &quot;firstName&quot;: &quot;A222lex&quot;,&#10;  &quot;lastName&quot;: &quot;Sh&quot;,&#10;  &quot;phone&quot;: &quot;+123412356789&quot;,&#10;  &quot;password&quot;: &quot;asdmin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1987,8 +2062,8 @@
         <item itemvalue="HTTP Request.http-request#6" />
         <item itemvalue="HTTP Request.http-request#1" />
         <item itemvalue="HTTP Request.http-request#7" />
-        <item itemvalue="HTTP Request.http-request#8" />
         <item itemvalue="HTTP Request.http-request#3" />
+        <item itemvalue="HTTP Request.http-request#8" />
       </list>
     </recent_temporary>
   </component>
@@ -2018,7 +2093,8 @@
       <workItem from="1602866328864" duration="180000" />
       <workItem from="1602866538844" duration="26886000" />
       <workItem from="1602895471609" duration="549000" />
-      <workItem from="1602896108750" duration="5920000" />
+      <workItem from="1602896108750" duration="6066000" />
+      <workItem from="1602902840500" duration="10463000" />
     </task>
     <task id="LOCAL-00001" summary="First initial commit with clear Symfony">
       <created>1602606168657</created>
@@ -2090,7 +2166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602880205908</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="REST API Errors handling">
+      <created>1602902160177</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602902160177</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2106,6 +2189,7 @@
     <MESSAGE value="JWT" />
     <MESSAGE value="configs" />
     <MESSAGE value="REST endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="REST endpoints" />
+    <MESSAGE value="REST API Errors handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="REST API Errors handling" />
   </component>
 </project>

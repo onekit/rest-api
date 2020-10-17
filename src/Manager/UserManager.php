@@ -4,57 +4,37 @@ namespace App\Manager;
 
 use App\Entity\Input\CreateUser;
 use App\Entity\User;
-use App\Form\UserType;
 use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
-use JsonException;
-use Symfony\Component\Form\FormFactoryInterface;
-use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\RequestStack;
-use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use Symfony\Component\Validator\ConstraintViolationListInterface;
 
 class UserManager
 {
     private $userRepository;
     private $em;
     private $passwordEncoder;
-    private $formFactory;
-    private $requestStack;
 
-    public function __construct(UserRepository $userRepository, EntityManagerInterface $em, UserPasswordEncoderInterface $passwordEncoder, FormFactoryInterface $formFactory, RequestStack $requestStack)
+    public function __construct(UserRepository $userRepository, EntityManagerInterface $em, UserPasswordEncoderInterface $passwordEncoder)
     {
         $this->em = $em;
         $this->userRepository = $userRepository;
         $this->passwordEncoder = $passwordEncoder;
-        $this->formFactory = $formFactory;
-        $this->requestStack = $requestStack;
     }
 
     /**
+     * @param User $user
      * @param CreateUser $createUser
      * @return User|JsonResponse
      */
-    public function createUser(CreateUser $createUser)
+    public function assignUser(User $user, CreateUser $createUser)
     {
-        $user = new User();
         $user->setFirstName($createUser->firstName)
             ->setLastName($createUser->lastName)
             ->setEmail($createUser->email)
             ->setPassword($this->passwordEncoder->encodePassword($user, $createUser->password));
 
-        return $this->update($user, true);
-    }
-
-    public function updateUser(User $user, CreateUser $createUser): User
-    {
-        $user->setPhone($createUser->phone)
-            ->setFirstName($createUser->firstName)
-            ->setLastName($createUser->lastName)
-            ->setEmail($createUser->email)
-            ->setPassword($this->passwordEncoder->encodePassword($user, $createUser->password));
-        $this->update($user, true);
         return $user;
     }
 
