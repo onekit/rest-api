@@ -63,9 +63,16 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=32, nullable=true)
      * @Groups({"user_get", "user_list", "Default"})
+     * @Assert\NotBlank(message="Please provide a phone number")
+     * @Assert\Length(
+     *     min=8,
+     *     max=16,
+     *     minMessage="The number field must contain at least one number",
+     *     maxMessage="The number field must contain maximum 16 numbers"
+     * )
      * @Assert\Regex(
-     *     pattern     = "/^\+[1-9]{1}[0-9]{7,11}$/i",
-     *     htmlPattern = "^\+[1-9]{1}[0-9]{7,11}$"
+     *     pattern="/^\+[0-9]+$/",
+     *     message="Only phone numbers allowed +375-xxxx format"
      * )
      */
     private $phone;

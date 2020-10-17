@@ -6,6 +6,7 @@ use FOS\RestBundle\Controller\AbstractFOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration as Sensio;
 
+
 class AuthController extends AbstractFOSRestController
 {
     /**
