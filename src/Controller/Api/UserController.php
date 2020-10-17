@@ -4,10 +4,13 @@ namespace App\Controller\Api;
 
 use App\Entity\Input\CreateUser;
 use App\Entity\User;
-use App\Manager\UserManager;
 use FOS\RestBundle\Controller\AbstractFOSRestController;
-use FOS\RestBundle\Controller\Annotations as Rest;
+use App\Manager\UserManager;
+use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use FOS\RestBundle\Controller\Annotations as Rest;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration as Sensio;
 
@@ -18,6 +21,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration as Sensio;
 class UserController extends AbstractFOSRestController
 {
     private $userManager;
+
+    /**
+     * UserController constructor.
+     * @param UserManager $userManager
+     */
     public function __construct(UserManager $userManager) {
         $this->userManager = $userManager;
     }
@@ -36,7 +44,7 @@ class UserController extends AbstractFOSRestController
      * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
      * @Rest\View(statusCode=201, serializerGroups={"user_get"})
      * @param CreateUser $createUser
-     * @return User
+     * @return User|Response
      */
     public function userCreate(CreateUser $createUser)
     {
@@ -59,12 +67,17 @@ class UserController extends AbstractFOSRestController
      * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
      * @Sensio\ParamConverter("user", converter="doctrine.orm")
      * @Rest\View(serializerGroups={"user_get","user_list"})
+     * @param Request $request
      * @param createUser $createUser
      * @param User $user
-     * @return User
+     * @return JsonResponse|User
      */
-    public function userUpdate(createUser $createUser, User $user): User
+    public function userUpdate(Request $request, createUser $createUser, User $user)
     {
+        $form = $this->createForm('App\Form\UserType', $user);
+        $form->handleRequest($request);
+        //TODO: validations errors display
+
         return $this->userManager->updateUser($user, $createUser);
     }
 
@@ -80,4 +93,24 @@ class UserController extends AbstractFOSRestController
         return $this->userManager->delete($id);
     }
 
+    public function getErrorMessages(FormInterface $form): array
+    {
+        $errors = [];
+
+        foreach ($form->getErrors() as $key => $error) {
+            if ($form->isRoot()) {
+                $errors['#'][] = $error->getMessage();
+            } else {
+                $errors[] = $error->getMessage();
+            }
+        }
+
+        foreach ($form->all() as $child) {
+            if (!$child->isValid()) {
+                $errors[$child->getName()] = $this->getErrorMessages($child);
+            }
+        }
+
+        return $errors;
+    }
 }

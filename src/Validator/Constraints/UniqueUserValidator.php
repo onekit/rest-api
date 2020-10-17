@@ -10,7 +10,7 @@ class UniqueUserValidator extends UniqueEntityValidator
 {
 
     /**
-     * @param \object $value
+     * @param object $value
      * @param Constraint $constraint
      */
     public function validate($value, Constraint $constraint)

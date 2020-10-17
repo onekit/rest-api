@@ -17,3 +17,15 @@ Load fixtures:
     php bin/console doctrine:migrations:migrate
     php bin/console doctrine:fixtures:load
 
+
+#DevTools scripts:
+
+Cache clear:
+    
+    ./c.cmd 
+
+Start a local server:
+
+    ./s.cmd
+
+http-request.http - file with test requests to API end-points

@@ -5,13 +5,14 @@ namespace App\Entity;
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\Serializer\Annotation\Groups;
-use Symfony\Bridge\Doctrine\Validator\Constraints as DoctrineAssert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
- * @DoctrineAssert\UniqueEntity("email")
+ * @UniqueEntity("email")
  * @ORM\HasLifecycleCallbacks
  * @ORM\Table(name="user")
  */
@@ -28,8 +29,10 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      * @Groups({"user_get", "user_list"})
+     * @Assert\Email
+     * @Assert\NotNull()
      */
-    private $email;
+    protected $email;
 
     /**
      * @ORM\Column(type="json")
@@ -46,18 +49,23 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      * @Groups({"user_get", "user_list"})
+     * @Assert\Length(min=2, max=255)
      */
     private $firstName;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      * @Groups({"user_get", "user_list"})
+     * @Assert\Length(min=2, max=255)
      */
     private $lastName;
 
     /**
      * @ORM\Column(type="string", length=32, nullable=true)
      * @Groups({"user_get", "user_list"})
+     * @Assert\Regex(
+     *     pattern     = "/^\+[1-9]{1}[0-9]{7,11}$/i"
+     * )
      */
     private $phone;
 

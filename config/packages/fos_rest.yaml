@@ -1,5 +1,11 @@
 # Read the documentation: https://symfony.com/doc/master/bundles/FOSRestBundle/index.html
 fos_rest:
+  exception:
+    codes:
+      'Symfony\Component\Routing\Exception\ResourceNotFoundException': 404
+      'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
+      'Doctrine\DBAL\Exception\UniqueConstraintViolationException': HTTP_CONFLICT
+    messages: true
   param_fetcher_listener: true
   body_listener: true
   body_converter:
