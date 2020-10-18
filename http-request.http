@@ -42,7 +42,7 @@ Content-Type: application/json
 Accept: application/json
 Authorization: Bearer {{auth_token}}
 
-c> {%
+> {%
     client.global.set("new_id", response.body.json.id);
 %}
 ###

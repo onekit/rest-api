@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22d3fa87-6663-4c6e-ba35-9a49bc6f0b25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/nelmio_api_doc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/nelmio_api_doc.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http-request.http" beforeDir="false" afterPath="$PROJECT_DIR$/http-request.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +182,43 @@
               </Biscuit>
             </list>
           </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://127.0.0.1:8080/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NzMyNjQsImV4cCI6MTYwMjk4ODg2NCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.1_YAiHWskxaxEeglqJdeODTDZMPLzeQkiTBO8ucokf-UduT2r6BJmDsjt3ZSBIjsIsKkn0LJwWSIHXp-T0O6_SucjIUWoOaqazLryRV_7N1pcis69A1o4fgE08hbzG4yKwQN7HLQnd7KR718FAxb1jCMUHp6NlX8Encx547dQ-pPRmGyZYEpUezNmtknHL7ZXHqRiAR9LSJ83UE5yEl-LdufqWJIDZmG-jJQ9BnQogrAD8iuQ0yNL8wabFzmkZwmjAaV9R-NQIgWS1vXYD5WEzDbMbzVAgijQrgYHfY5MQhz9Zvn9ZwW9VLmhmE2EkgeGo_TsepzLsqhjMbrQp5XjjVaBA_YuC8mXaycvutHql5MrqsPF3-P1n-lRxidwjx05qd33lFrz15XTZPagPSmb16Dr_NhgsrjlPNjt5xiqrRHzBlldyQA8kvtr96mmUcHzaMAGhvfgrjTGxUXQCKLg-naJPIJ7LgnR4W0XZkChdAQkqDDj33ietUBt3o_8_sbnSs0NY2bUSA_ft0d8HPf3LO9m8CMLDrpGkc9plIK7BzmO2X5eJhXo7hPupsDJDJ_pqU3KxjtUzJQ_XmwnMF2RBw_GkSTKBSRuGmlQxddxxur0RaojJR8_orrfKGrHwZ4iygHKnHUSK-k5xpRZHQ1djeSVnqTo4tZ95U9nZDqeu0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="127.0.0.1" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22070725%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A61%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://127.0.0.1:8080/api/login_check" />
           <option name="urlPath" value="" />
@@ -242,8 +272,7 @@
               </KeyValuePair>
             </list>
           </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;new_user@domain.com&quot;,&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+375290000000&quot;,&#10;  &quot;password&quot;: &quot;admin2&quot;&#10;}" />
+          <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -344,22 +373,27 @@
               </Biscuit>
             </list>
           </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://127.0.0.1:8080/api/users" />
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
               <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NzMyNjQsImV4cCI6MTYwMjk4ODg2NCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.1_YAiHWskxaxEeglqJdeODTDZMPLzeQkiTBO8ucokf-UduT2r6BJmDsjt3ZSBIjsIsKkn0LJwWSIHXp-T0O6_SucjIUWoOaqazLryRV_7N1pcis69A1o4fgE08hbzG4yKwQN7HLQnd7KR718FAxb1jCMUHp6NlX8Encx547dQ-pPRmGyZYEpUezNmtknHL7ZXHqRiAR9LSJ83UE5yEl-LdufqWJIDZmG-jJQ9BnQogrAD8iuQ0yNL8wabFzmkZwmjAaV9R-NQIgWS1vXYD5WEzDbMbzVAgijQrgYHfY5MQhz9Zvn9ZwW9VLmhmE2EkgeGo_TsepzLsqhjMbrQp5XjjVaBA_YuC8mXaycvutHql5MrqsPF3-P1n-lRxidwjx05qd33lFrz15XTZPagPSmb16Dr_NhgsrjlPNjt5xiqrRHzBlldyQA8kvtr96mmUcHzaMAGhvfgrjTGxUXQCKLg-naJPIJ7LgnR4W0XZkChdAQkqDDj33ietUBt3o_8_sbnSs0NY2bUSA_ft0d8HPf3LO9m8CMLDrpGkc9plIK7BzmO2X5eJhXo7hPupsDJDJ_pqU3KxjtUzJQ_XmwnMF2RBw_GkSTKBSRuGmlQxddxxur0RaojJR8_orrfKGrHwZ4iygHKnHUSK-k5xpRZHQ1djeSVnqTo4tZ95U9nZDqeu0" />
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
               </KeyValuePair>
               <KeyValuePair>
                 <option name="key" value="Accept" />
                 <option name="value" value="application/json" />
               </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NzMyNjQsImV4cCI6MTYwMjk4ODg2NCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.1_YAiHWskxaxEeglqJdeODTDZMPLzeQkiTBO8ucokf-UduT2r6BJmDsjt3ZSBIjsIsKkn0LJwWSIHXp-T0O6_SucjIUWoOaqazLryRV_7N1pcis69A1o4fgE08hbzG4yKwQN7HLQnd7KR718FAxb1jCMUHp6NlX8Encx547dQ-pPRmGyZYEpUezNmtknHL7ZXHqRiAR9LSJ83UE5yEl-LdufqWJIDZmG-jJQ9BnQogrAD8iuQ0yNL8wabFzmkZwmjAaV9R-NQIgWS1vXYD5WEzDbMbzVAgijQrgYHfY5MQhz9Zvn9ZwW9VLmhmE2EkgeGo_TsepzLsqhjMbrQp5XjjVaBA_YuC8mXaycvutHql5MrqsPF3-P1n-lRxidwjx05qd33lFrz15XTZPagPSmb16Dr_NhgsrjlPNjt5xiqrRHzBlldyQA8kvtr96mmUcHzaMAGhvfgrjTGxUXQCKLg-naJPIJ7LgnR4W0XZkChdAQkqDDj33ietUBt3o_8_sbnSs0NY2bUSA_ft0d8HPf3LO9m8CMLDrpGkc9plIK7BzmO2X5eJhXo7hPupsDJDJ_pqU3KxjtUzJQ_XmwnMF2RBw_GkSTKBSRuGmlQxddxxur0RaojJR8_orrfKGrHwZ4iygHKnHUSK-k5xpRZHQ1djeSVnqTo4tZ95U9nZDqeu0" />
+              </KeyValuePair>
             </list>
           </option>
-          <option name="textToSend" value="" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;new_user@domain.com&quot;,&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;  &quot;lastName&quot;: &quot;Smith&quot;,&#10;  &quot;phone&quot;: &quot;+375290000000&quot;,&#10;  &quot;password&quot;: &quot;admin2&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -2160,52 +2194,10 @@
           <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;zzdcsrrcffa@smf.com&quot;,&#10;  &quot;firstName&quot;: &quot;gd&quot;,&#10;  &quot;lastName&quot;: &quot;S&quot;,&#10;  &quot;phone&quot;: &quot;+1666354&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="PHPSESSID" />
-                <option name="path" value="/" />
-                <option name="value" value="85vog32jsov1lc9pamcjsp1msi" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="127.0.0.1" />
-                <option name="name" value="sf_redirect" />
-                <option name="path" value="/" />
-                <option name="value" value="%7B%22token%22%3A%2268b094%22%2C%22route%22%3A%22user_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CApi%5C%5CUserController%22%2C%22method%22%3A%22userCreate%22%2C%22file%22%3A%22%5C%2FUsers%5C%2Fonekit%5C%2FSites%5C%2Frest-api%5C%2Fsrc%5C%2FController%5C%2FApi%5C%2FUserController.php%22%2C%22line%22%3A61%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://127.0.0.1:8080/api/users" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDI5NzIyNTQsImV4cCI6MTYwMjk4Nzg1NCwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJlbWFpbCI6Im9uZWtpdEBnbWFpbC5jb20ifQ.ZXXEpyXDA_Ux3w0wzjCAh9q7djRVd3bkzNvrPXyfz1xUg6drabNG_K3-FfrQBmgRM61ZLaWWcjqR5hrBuUYoyypnn6559ZcA5VhzAQA5pN1qO1KVXb5kChwBrY_-DvpgvlqzccQbf24fFlfJWW27hqRR_XRwA_FfA1xlk5y3dnL8NfJc3CNKfF3e-3tzVeGtVD1LaYV-lINVO06uOfZC-svZWXaEFVeopuoj9GjM7wy3HsKZhpbW_sklmETcbOTgrxJIIgzwDCH8DPIj4PJ99DxX6PsvvOJ01C0wc_cGMELGTSKdEqtm_DhDj21GksntUNcdzRpY9xIBJANNQuEw5S3VH_r2JaZUjvJ4l8LJfu7LT3_DxGAV6sH9gdYsnU4utztmL5fNeOaiWgg4MHTyoOcSWSjpE_pu5PihpOrxdw117PLF4REwzsC9TvlCMTvTrJy_CHj3MkVIN1fdwEyo82DEGzx84haX80nYUdKeqfDxRT_cTS1bM0gJM4Lf2HaOd0xNrHzQT2yn13PzsYHqzdYSAP5QLOPGgj5FmCrTIGaUbFaYO2yRcWSDpD61GxbQHWVQ_vbd5JEDs8CqettXH_dYsY8bT8nNrIdT7mB-o-j1HbZGU-7nAHbwFEwnPawY77EN9mjUiYyudEkjEGL_2h978Kkcl1bhbMS9wSn0kgA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;zzdcsrrcffa@sggmdsddfdfmmmf.com&quot;,&#10;  &quot;firstName&quot;: &quot;gd&quot;,&#10;  &quot;lastName&quot;: &quot;S&quot;,&#10;  &quot;phone&quot;: &quot;+1666354&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.http-request#1">
+  <component name="RunManager" selected="HTTP Request.All in http-request">
     <configuration name="All in http-request" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/http-request.http">
       <method v="2" />
     </configuration>
@@ -2223,10 +2215,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.http-request#1" />
         <item itemvalue="HTTP Request.All in http-request" />
-        <item itemvalue="HTTP Request.http-request#3" />
         <item itemvalue="HTTP Request.http-request#2" />
+        <item itemvalue="HTTP Request.http-request#1" />
+        <item itemvalue="HTTP Request.http-request#3" />
         <item itemvalue="HTTP Request.http-request#6" />
       </list>
     </recent_temporary>
@@ -2259,7 +2251,7 @@
       <workItem from="1602895471609" duration="549000" />
       <workItem from="1602896108750" duration="6066000" />
       <workItem from="1602902840500" duration="10583000" />
-      <workItem from="1602960532284" duration="19381000" />
+      <workItem from="1602960532284" duration="19601000" />
     </task>
     <task id="LOCAL-00001" summary="First initial commit with clear Symfony">
       <created>1602606168657</created>
@@ -2359,7 +2351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602976255847</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Sandbox in NelmioApiDoc Bundle">
+      <created>1602984943717</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602984943717</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2379,6 +2378,7 @@
     <MESSAGE value="Remove forms" />
     <MESSAGE value="Refactor" />
     <MESSAGE value="Validation and Doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validation and Doc" />
+    <MESSAGE value="Sandbox in NelmioApiDoc Bundle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sandbox in NelmioApiDoc Bundle" />
   </component>
 </project>
