@@ -42,14 +42,7 @@ Content-Type: application/json
 Accept: application/json
 Authorization: Bearer {{auth_token}}
 
-{
-  "email": "new_user@domain.com",
-  "firstName": "John",
-  "lastName": "Smith",
-  "phone": "+375290000000",
-  "password": "admin2"
-}
-> {%
+c> {%
     client.global.set("new_id", response.body.json.id);
 %}
 ###

@@ -9,6 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use OpenApi\Annotations as OA;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
@@ -31,6 +32,10 @@ class User implements UserInterface
      * @Groups({"user_get", "user_list","Default"})
      * @Assert\Email
      * @Assert\NotNull()
+     * @OA\Property(
+     *      property="username",
+     *      type="string",
+     *      description="Email used as Login")
      */
     protected $email;
 
@@ -43,6 +48,10 @@ class User implements UserInterface
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
+     * @OA\Property(
+     *      property="password",
+     *      type="string",
+     *      description="Password")
      */
     private $password;
 

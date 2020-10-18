@@ -13,7 +13,8 @@ use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration as Sensio;
 use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
-
+use OpenApi\Annotations as OA;
+use Nelmio\ApiDocBundle\Annotation\Model;
 
 /**
  * @Route("/users")
@@ -51,6 +52,42 @@ class UserController extends AbstractFOSRestController
     }
 
     /**
+     * @OA\Post(
+     *     path="/users",
+     *     summary="Adds a new user",
+     *     @OA\RequestBody(
+     *         @OA\MediaType(
+     *             mediaType="application/json",
+     *             @OA\Schema(
+     *                 @OA\Property(
+     *                     property="email",
+     *                     type="string"
+     *                 ),
+     *                 @OA\Property(
+     *                     property="password",
+     *                     type="string"
+     *                 ),
+     *                 @OA\Property(
+     *                     property="firstName",
+     *                     type="string"
+     *                 ),
+     *                 @OA\Property(
+     *                     property="lastName",
+     *                     type="string"
+     *                 ),
+     *                 @OA\Property(
+     *                     property="phone",
+     *                     type="string"
+     *                 ),
+     *                 example={"email": "new_user@domain.com", "firstName": "John", "lastName": "Smith", "phone": "+375290000000", "password": "admin2"}
+     *             )
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="OK"
+     *     )
+     * )
      * @Rest\Post("", name="user_create")
      * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
      * @Rest\View(statusCode=201, serializerGroups={"user_get"})
