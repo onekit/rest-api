@@ -24,8 +24,12 @@ Cache clear:
     
     ./c.cmd 
 
-Start a local server:
+Start a local server https://127.0.0.1:8080/:
 
     ./s.cmd
 
 http-request.http - file with test requests to API end-points
+
+Nelmio API Doc Sandbox available: 
+
+    https://127.0.0.1:8080/api/doc
