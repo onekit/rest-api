@@ -42,6 +42,14 @@ Content-Type: application/json
 Accept: application/json
 Authorization: Bearer {{auth_token}}
 
+{
+  "email": "ant@1kit.net",
+  "firstName": "Alexander",
+  "lastName": "Schumann",
+  "phone": "+375292193504",
+  "password": "admin"
+}
+
 > {%
     client.global.set("new_id", response.body.id);
 %}
@@ -53,7 +61,7 @@ Accept: application/json
 Authorization: Bearer {{auth_token}}
 
 {
-  "email": "onekit@2gmail.com",
+  "email": "antarex@1kit.net",
   "firstName": "Alexander",
   "lastName": "Schumann",
   "phone": "+375292193504",
