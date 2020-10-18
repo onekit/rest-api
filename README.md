@@ -30,6 +30,6 @@ Start a local server https://127.0.0.1:8080/:
 
 http-request.http - file with test requests to API end-points
 
-Nelmio API Doc Sandbox available: 
+Nelmio API Doc Sandbox is available on: 
 
     https://127.0.0.1:8080/api/doc
