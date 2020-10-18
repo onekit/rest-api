@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {"username": "onekit@gmail.com", "password": "admin"}
 > {%
-    client.global.set("auth_token", response.body.json.token);
+    client.global.set("auth_token", response.body.token);
 %}
 ###
 GET http://127.0.0.1:8080/api/users
@@ -12,7 +12,7 @@ Authorization: Bearer {{auth_token}}
 Accept: application/json
 
 > {%
-    client.global.set("user_id", response.body.json.id);
+    client.global.set("user_id", response.body[0].id);
 %}
 ###
 
@@ -43,7 +43,7 @@ Accept: application/json
 Authorization: Bearer {{auth_token}}
 
 > {%
-    client.global.set("new_id", response.body.json.id);
+    client.global.set("new_id", response.body.id);
 %}
 ###
 
