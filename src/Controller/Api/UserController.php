@@ -2,7 +2,7 @@
 
 namespace App\Controller\Api;
 
-use App\Entity\Input\CreateUser;
+use App\DTO\CreateUser;
 use App\Entity\User;
 use FOS\RestBundle\Controller\AbstractFOSRestController;
 use App\Manager\UserManager;
