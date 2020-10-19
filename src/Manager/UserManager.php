@@ -35,9 +35,17 @@ class UserManager
      */
     public function assignUser(User $user, CreateUser $createUser): User
     {
-        $user->setFirstName($createUser->firstName)
-            ->setLastName($createUser->lastName)
-            ->setPhone($createUser->phone);
+        if ($createUser->firstName) {
+            $user->setFirstName($createUser->firstName);
+        }
+
+        if ($createUser->lastName) {
+            $user->setLastName($createUser->lastName);
+        }
+
+        if ($createUser->phone) {
+            $user->setPhone($createUser->phone);
+        }
 
         if ($createUser->email) {
             $user->setEmail($createUser->email);

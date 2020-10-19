@@ -24,13 +24,13 @@ class User implements UserInterface
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"user_get", "user_list","Default"})
+     * @Groups({"user_get", "user_list", "Default"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
-     * @Groups({"user_get", "user_list","Default"})
+     * @Groups({"user_get", "user_list", "Default"})
      * @Assert\NotNull()
      * @Assert\NotBlank()
      * @Assert\Email
@@ -68,7 +68,7 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"user_get", "user_list"})
+     * @Groups({"user_get", "user_list", "Default"})
      * @Assert\Length(min=2, max=255)
      */
     private $lastName;
