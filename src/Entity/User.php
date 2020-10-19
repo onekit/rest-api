@@ -33,6 +33,7 @@ class User implements UserInterface
      * @Groups({"user_get", "user_list","Default"})
      * @Assert\Email
      * @Assert\NotNull()
+     * @Assert\NotBlank()
      * @OA\Property(
      *      property="username",
      *      type="string",
