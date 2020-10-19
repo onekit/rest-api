@@ -21,8 +21,8 @@ class UserManager
 
     public function __construct(UserRepository $userRepository, EntityManagerInterface $em, Security $security, UserPasswordEncoderInterface $passwordEncoder, ValidatorInterface $validator)
     {
-        $this->em = $em;
         $this->userRepository = $userRepository;
+        $this->em = $em;
         $this->security = $security;
         $this->passwordEncoder = $passwordEncoder;
         $this->validator = $validator;
@@ -31,9 +31,9 @@ class UserManager
     /**
      * @param User $user
      * @param CreateUser $createUser
-     * @return User|JsonResponse
+     * @return User
      */
-    public function assignUser(User $user, CreateUser $createUser)
+    public function assignUser(User $user, CreateUser $createUser): User
     {
         $user->setFirstName($createUser->firstName)
             ->setLastName($createUser->lastName)
@@ -66,13 +66,9 @@ class UserManager
         return new JsonResponse(null, 204);
     }
 
-    public function updateUser(CreateUser $createUser, User $user) {
-
-        //check if owner
-        if ($createUser->id && $this->security->getUser()->getId() != $createUser->id) {
-            return new JsonResponse(['errors' => 'Access denied. You can edit only your own account.'], 403);
-        }
-
+    public function updateUser(CreateUser $createUser, User $user = null)
+    {
+        $user = $user ? $user : new User();
         $this->assignUser($user, $createUser);
         $constraints = $this->validator->validate($user);
         if ($constraints->count()) {
@@ -100,4 +96,5 @@ class UserManager
         }
         return $messages;
     }
+
 }

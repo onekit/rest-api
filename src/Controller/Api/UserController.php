@@ -12,6 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration as Sensio;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use OpenApi\Annotations as OA;
 use Nelmio\ApiDocBundle\Annotation\Model;
 
@@ -95,7 +96,7 @@ class UserController extends AbstractFOSRestController
      */
     public function userCreate(CreateUser $createUser)
     {
-        return $this->userManager->updateUser($createUser, new User());
+        return $this->userManager->updateUser($createUser);
     }
 
     /**
@@ -103,6 +104,7 @@ class UserController extends AbstractFOSRestController
      * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
      * @Sensio\ParamConverter("user", converter="doctrine.orm")
      * @Rest\View(serializerGroups={"user_get","user_list"})
+     * @Security("user.getId() == id")
      * @param string $id
      * @param createUser $createUser
      * @param User $user

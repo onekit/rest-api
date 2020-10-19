@@ -12,6 +12,9 @@
             "config/routes/nelmio_api_doc.yaml"
         ]
     },
+    "php": {
+        "version": "7.3"
+    },
     "symfony/asset": {
         "version": "v5.1.7"
     },
