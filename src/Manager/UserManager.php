@@ -8,18 +8,24 @@ use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use Symfony\Component\Security\Core\Security;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class UserManager
 {
     private $userRepository;
     private $em;
+    private $security;
     private $passwordEncoder;
+    private $validator;
 
-    public function __construct(UserRepository $userRepository, EntityManagerInterface $em, UserPasswordEncoderInterface $passwordEncoder)
+    public function __construct(UserRepository $userRepository, EntityManagerInterface $em, Security $security, UserPasswordEncoderInterface $passwordEncoder, ValidatorInterface $validator)
     {
         $this->em = $em;
         $this->userRepository = $userRepository;
+        $this->security = $security;
         $this->passwordEncoder = $passwordEncoder;
+        $this->validator = $validator;
     }
 
     /**
@@ -60,6 +66,21 @@ class UserManager
         return new JsonResponse(null, 204);
     }
 
+    public function updateUser(CreateUser $createUser, User $user) {
+
+        //check if owner
+        if ($createUser->id && $this->security->getUser()->getId() != $createUser->id) {
+            return new JsonResponse(['errors' => 'Access denied. You can edit only your own account.'], 403);
+        }
+
+        $this->assignUser($user, $createUser);
+        $constraints = $this->validator->validate($user);
+        if ($constraints->count()) {
+            return new JsonResponse(['errors' => $this->handleError($constraints)], 400);
+        }
+        return $this->update($user, true);
+    }
+
     public function update(User $user, $flush = false): User
     {
         $this->em->persist($user);
@@ -67,5 +88,16 @@ class UserManager
             $this->em->flush();
         }
         return $user;
+    }
+
+
+    protected function handleError($violations): array
+    {
+        $messages = [];
+        foreach ($violations as $constraint) {
+            $prop = $constraint->getPropertyPath();
+            $messages[$prop][] = $constraint->getMessage();
+        }
+        return $messages;
     }
 }

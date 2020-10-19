@@ -11,7 +11,6 @@ use FOS\RestBundle\Controller\Annotations as Rest;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration as Sensio;
-use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 use OpenApi\Annotations as OA;
 use Nelmio\ApiDocBundle\Annotation\Model;
@@ -92,18 +91,11 @@ class UserController extends AbstractFOSRestController
      * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
      * @Rest\View(statusCode=201, serializerGroups={"user_get"})
      * @param CreateUser $createUser
-     * @param ValidatorInterface $validator
      * @return User|Response
      */
-    public function userCreate(CreateUser $createUser, ValidatorInterface $validator)
+    public function userCreate(CreateUser $createUser)
     {
-        $user = new User();
-        $this->userManager->assignUser($user, $createUser);
-        $constraints = $validator->validate($user);
-        if ($constraints->count()) {
-            return new JsonResponse(['errors' => $this->handleError($constraints)], 400);
-        }
-        return $this->userManager->update($user, true);
+        return $this->userManager->updateUser($createUser, new User());
     }
 
     /**
@@ -114,23 +106,12 @@ class UserController extends AbstractFOSRestController
      * @param string $id
      * @param createUser $createUser
      * @param User $user
-     * @param ValidatorInterface $validator
      * @return JsonResponse|User
      */
-    public function userUpdate(string $id, createUser $createUser, User $user, ValidatorInterface $validator, Security $security)
+    public function userUpdate(string $id, createUser $createUser, User $user)
     {
-        if ($security->getUser()->getId() != $id) {
-            return new JsonResponse(['errors' => 'Access denied. You can edit only your own account.'], 403);
-        }
-
-        $user = $this->userManager->assignUser($user, $createUser);
-        $constraints = $validator->validate($user);
-
-        if ($constraints->count()) {
-            return new JsonResponse(['errors' => $this->handleError($constraints)], 400);
-        }
-
-        return $this->userManager->update($user, true);
+        $createUser->id = $id;
+        return $this->userManager->updateUser($createUser, $user);
     }
 
     /**
@@ -145,13 +126,4 @@ class UserController extends AbstractFOSRestController
         return $this->userManager->delete($id);
     }
 
-    protected function handleError($violations): array
-    {
-        $messages = [];
-        foreach ($violations as $constraint) {
-            $prop = $constraint->getPropertyPath();
-            $messages[$prop][] = $constraint->getMessage();
-        }
-        return $messages;
-    }
 }
