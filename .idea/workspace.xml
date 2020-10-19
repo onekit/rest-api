@@ -4,6 +4,7 @@
     <list default="true" id="22d3fa87-6663-4c6e-ba35-9a49bc6f0b25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/UserManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -3330,7 +3331,8 @@
       <workItem from="1603109914875" duration="759000" />
       <workItem from="1603125728303" duration="6138000" />
       <workItem from="1603137540677" duration="150000" />
-      <workItem from="1603139904387" duration="438000" />
+      <workItem from="1603139904387" duration="552000" />
+      <workItem from="1603141195092" duration="881000" />
     </task>
     <task id="LOCAL-00001" summary="First initial commit with clear Symfony">
       <created>1602606168657</created>
@@ -3486,7 +3488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603139983745</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added constraint for User entity">
+      <created>1603140427825</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603140427825</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3513,6 +3522,7 @@
     <MESSAGE value="HTTP Tests hot fix" />
     <MESSAGE value="Validation" />
     <MESSAGE value="CORS for REST Bundle" />
-    <option name="LAST_COMMIT_MESSAGE" value="CORS for REST Bundle" />
+    <MESSAGE value="added constraint for User entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="added constraint for User entity" />
   </component>
 </project>

@@ -37,9 +37,14 @@ class UserManager
     {
         $user->setFirstName($createUser->firstName)
             ->setLastName($createUser->lastName)
-            ->setPhone($createUser->phone)
-            ->setEmail($createUser->email)
-            ->setPassword($this->passwordEncoder->encodePassword($user, $createUser->password));
+            ->setPhone($createUser->phone);
+
+        if ($createUser->email) {
+            $user->setEmail($createUser->email);
+        }
+        if ($createUser->password) {
+            $user->setPassword($this->passwordEncoder->encodePassword($user, $createUser->password));
+        }
 
         return $user;
     }

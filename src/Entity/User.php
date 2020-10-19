@@ -31,9 +31,9 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      * @Groups({"user_get", "user_list","Default"})
-     * @Assert\Email
      * @Assert\NotNull()
      * @Assert\NotBlank()
+     * @Assert\Email
      * @OA\Property(
      *      property="username",
      *      type="string",
