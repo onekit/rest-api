@@ -61,21 +61,21 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"user_get", "user_list", "Default"})
+     * @Groups({"user_get", "user_list"})
      * @Assert\Length(min=2, max=255)
      */
     private $firstName;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"user_get", "user_list", "Default"})
+     * @Groups({"user_get", "user_list"})
      * @Assert\Length(min=2, max=255)
      */
     private $lastName;
 
     /**
      * @ORM\Column(type="string", length=32, nullable=true)
-     * @Groups({"user_get", "user_list", "Default"})
+     * @Groups({"user_get", "user_list"})
      * @Assert\NotBlank(message="Please provide a phone number")
      * @Assert\Length(
      *     min=8,
@@ -93,14 +93,14 @@ class User implements UserInterface
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
-     * @Groups({"user_get", "Default"})
+     * @Groups({"user_get"})
      */
     private $created;
 
     /**
      * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime")
-     * @Groups({"user_get", "Default"})
+     * @Groups({"user_get"})
      */
     private $updated;
 

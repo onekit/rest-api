@@ -103,7 +103,7 @@ class UserController extends AbstractFOSRestController
      * @Rest\Put("/{id}", name="user_update", requirements={"id" = "\d+"})
      * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
      * @Sensio\ParamConverter("user", converter="doctrine.orm")
-     * @Rest\View(serializerGroups={"user_get","user_list"})
+     * @Rest\View(serializerGroups={"user_get"})
      * @Security("user.getId() == id")
      * @param string $id
      * @param createUser $createUser
