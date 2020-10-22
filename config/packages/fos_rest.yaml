@@ -6,7 +6,9 @@ fos_rest:
       'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
       'Doctrine\DBAL\Exception\UniqueConstraintViolationException': HTTP_CONFLICT
     messages: true
-  param_fetcher_listener: true
+  param_fetcher_listener:
+    enabled: true
+    force: true
   body_listener: true
   body_converter:
     enabled: true
@@ -14,9 +16,9 @@ fos_rest:
   format_listener:
     enabled: true
     rules:
-      - { path: "^/", priorities: ["json"], fallback_format: "html" }
+      - { path: "^/", priorities: ["json"], fallback_format: "json" }
   versioning: true
   view:
     formats:
       json: true
-    view_response_listener: 'force'
+    view_response_listener: true

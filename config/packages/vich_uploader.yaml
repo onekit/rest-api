@@ -1,10 +1,10 @@
 vich_uploader:
     db_driver: orm
     mappings:
-        image_picture:
-            upload_destination: '/public/Data/photos'
+        picture:
+            upload_destination: '../public/media/photos/'
             namer: vich_uploader.namer_uniqid
-            uri_prefix: '/Data/photos'
+            uri_prefix: '/media/photos'
             delete_on_remove:   true  # determines whether to delete file upon removal of entity
-            delete_on_update:   true  # determines wheter to delete the file upon update of entity
+            delete_on_update:   true  # determines whether to delete the file upon update of entity
             inject_on_load:     true # determines whether to inject a File instance upon load

@@ -1,6 +1,18 @@
 liip_imagine:
+    cache: profile_photos
+    resolvers:
+        profile_photos:
+            web_path:
+                web_root: "%kernel.project_dir%/public"
+                cache_prefix: "media/cache"
     loaders:
         profile_photos:
             flysystem:
                 filesystem_service: oneup_flysystem.profile_photos_filesystem
     data_loader: profile_photos
+    filter_sets:
+        cache: ~
+        my_thumb:
+            quality: 75
+            filters:
+                thumbnail: { size: [ 120, 90 ], mode: outbound }

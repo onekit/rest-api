@@ -81,14 +81,33 @@ Content-Type: multipart/form-data; boundary=WebAppBoundary
 Authorization: Bearer {{auth_token}}
 
 --WebAppBoundary
+Content-Disposition: form-data; name="title";
+Content-Type: text/plain
+
+Title
+--WebAppBoundary
 Content-Disposition: form-data; name="file"; filename="example.jpg"
 Content-Type: image/jpeg
 
 < ./src/DataFixtures/example.jpg
 --WebAppBoundary--
 
+###
+POST https://127.0.0.1:8080/api/pictures
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer {{auth_token}}
 
+--WebAppBoundary
+Content-Disposition: form-data; name="title";
+Content-Type: text/plain
 
+Beard
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="beard.jpg"
+Content-Type: image/jpeg
+
+< ./src/DataFixtures/beard.jpg
+--WebAppBoundary--
 
 
 ###

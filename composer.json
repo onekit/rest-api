@@ -4,8 +4,10 @@
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
+        "ext-exif": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "^1.11",
+        "diversen/gps-from-exif": "^1.0",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.1",
         "doctrine/doctrine-migrations-bundle": "^3.0",

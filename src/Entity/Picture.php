@@ -8,11 +8,12 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
- * @ORM\Entity(repositoryClass=ImageRepository::class)
+ * @ORM\Entity(repositoryClass=PictureRepository::class)
  * @ORM\Table(name="picture")
  * @Vich\Uploadable
  */
@@ -22,8 +23,15 @@ class Picture
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"picture_get", "picture_list", "Default"})
      */
     private $id;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"picture_get", "picture_list", "Default"})
+     */
+    protected $title;
 
     /**
      * @ORM\ManyToOne(
@@ -33,11 +41,12 @@ class Picture
      * @ORM\JoinColumn(
      *      name="user_id"
      * )
+     * @Groups({"picture_get", "picture_list", "Default"})
      */
     protected $user;
 
     /**
-     * @Vich\UploadableField(mapping="file", fileNameProperty="fileName")
+     * @Vich\UploadableField(mapping="picture", fileNameProperty="fileName")
      * @var File
      * @Assert\Image
      * @Assert\NotNull
@@ -47,40 +56,75 @@ class Picture
     /**
      * @var string $fileName
      * @ORM\Column(name="filename", type="string", length=64, nullable=true)
+     * @Groups({"picture_get", "picture_list", "Default"})
      */
     protected $fileName;
 
     /**
-     * @var string $fileUrl
+     * @var string $width
+     * @ORM\Column(type="string", length=64, nullable=true)
+     * @Groups({"picture_get", "picture_list", "Default"})
+     */
+    protected $width;
+
+    /**
+     * @ORM\Column(type="string", length=64, nullable=true)
+     * @Groups({"picture_get", "picture_list", "Default"})
+     */
+    protected $height;
+
+    /**
      * @ORM\Column(name="file_url", type="string", length=255, nullable=true)
+     * @Groups({"picture_get", "picture_list", "Default"})
      */
     protected $fileUrl;
 
     /**
+     * @ORM\Column(name="fileSize", type="string", length=255, nullable=true)
+     */
+    protected $fileSize;
+
+    /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"picture_get", "picture_list", "Default"})
      */
     private $lat;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"picture_get", "picture_list", "Default"})
      */
     private $lng;
 
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
+     * @Groups({"picture_get", "picture_list", "Default"})
      */
     private $created;
 
     /**
      * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime")
+     * @Groups({"picture_get", "picture_list", "Default"})
      */
     private $updated;
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getTitle(): ?string
+    {
+        return $this->title;
+    }
+
+    public function setTitle(?string $title): self
+    {
+        $this->title = $title;
+
+        return $this;
     }
 
     public function getLat(): ?string
@@ -193,5 +237,53 @@ class Picture
     public function setUser($user): void
     {
         $this->user = $user;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFileSize(): string
+    {
+        return $this->fileSize;
+    }
+
+    /**
+     * @param string $fileSize
+     */
+    public function setFileSize(string $fileSize): void
+    {
+        $this->fileSize = $fileSize;
+    }
+
+    /**
+     * @return string
+     */
+    public function getWidth(): string
+    {
+        return $this->width;
+    }
+
+    /**
+     * @param string $width
+     */
+    public function setWidth(string $width): void
+    {
+        $this->width = $width;
+    }
+
+    /**
+     * @return string
+     */
+    public function getHeight(): string
+    {
+        return $this->height;
+    }
+
+    /**
+     * @param string $height
+     */
+    public function setHeight(string $height): void
+    {
+        $this->height = $height;
     }
 }

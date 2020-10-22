@@ -41,14 +41,12 @@ class PictureController extends AbstractFOSRestController
 
     /**
      * @Rest\Post("", name="picture_create")
-     * @Rest\View(statusCode=201, serializerGroups={"default", "picture"})
-     * @Sensio\ParamConverter("createPicture", converter="fos_rest.request_body")
-     * @param CreatePicture $createPicture
+     * @Rest\View(statusCode=201, serializerGroups={"default", "picture_get"})
      * @return JsonResponse|Picture
      */
-    public function pictureCreate(CreatePicture $createPicture)
+    public function pictureCreate()
     {
-        return $this->pictureManager->updatePicture(new Picture(), $createPicture);
+        return $this->pictureManager->updatePicture(new Picture());
     }
 
     /**
