@@ -1,0 +1,9 @@
+oneup_flysystem:
+    adapters:
+        profile_photos:
+            local:
+                directory:  "public/Data/photos"
+
+    filesystems:
+        profile_photos:
+            adapter: profile_photos

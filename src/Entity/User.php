@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -27,6 +28,15 @@ class User implements UserInterface
      * @Groups({"user_get", "user_list", "Default"})
      */
     private $id;
+
+    /**
+     * @ORM\OneToMany(
+     *      targetEntity="App\Entity\Picture",
+     *      mappedBy="user", cascade={"persist","remove"}, orphanRemoval=true
+     * )
+     */
+    private $pictures = [];
+
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
@@ -103,6 +113,12 @@ class User implements UserInterface
      * @Groups({"user_get"})
      */
     private $updated;
+
+
+    public function __construct()
+    {
+        $this->pictures = new ArrayCollection();
+    }
 
 
     public function getId(): ?int

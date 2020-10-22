@@ -7,7 +7,7 @@ Content-Type: application/json
     client.global.set("auth_token", response.body.token);
 %}
 ###
-GET http://127.0.0.1:8080/api/users
+GET https://127.0.0.1:8080/api/users
 Authorization: Bearer {{auth_token}}
 Accept: application/json
 
@@ -16,7 +16,7 @@ Accept: application/json
 %}
 ###
 
-GET http://127.0.0.1:8080/api/users/{{user_id}}
+GET https://127.0.0.1:8080/api/users/{{user_id}}
 Authorization: Bearer {{auth_token}}
 Accept: application/json
 
@@ -75,3 +75,23 @@ Content-Type: application/json
 Accept: application/json
 Authorization: Bearer {{auth_token}}
 ###
+
+POST https://127.0.0.1:8080/api/pictures
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer {{auth_token}}
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="example.jpg"
+Content-Type: image/jpeg
+
+< ./src/DataFixtures/example.jpg
+--WebAppBoundary--
+
+
+
+
+
+###
+GET https://127.0.0.1:8080/api/pictures
+Authorization: Bearer {{auth_token}}
+Accept: application/json

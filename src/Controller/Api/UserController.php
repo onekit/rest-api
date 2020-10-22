@@ -89,8 +89,8 @@ class UserController extends AbstractFOSRestController
      *     )
      * )
      * @Rest\Post("", name="user_create")
-     * @Sensio\ParamConverter("createUser", converter = "fos_rest.request_body")
-     * @Rest\View(statusCode=201, serializerGroups={"user_get"})
+     * @Rest\View(serializerGroups={"user_get"})
+     * @Sensio\ParamConverter("createUser", converter="fos_rest.request_body")
      * @param CreateUser $createUser
      * @return User|Response
      */

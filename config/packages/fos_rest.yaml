@@ -10,10 +10,13 @@ fos_rest:
   body_listener: true
   body_converter:
     enabled: true
+    validate: true
   format_listener:
     enabled: true
     rules:
-      - { path: "^/", priorities: [ "json" ], fallback_format: "html" }
+      - { path: "^/", priorities: ["json"], fallback_format: "html" }
   versioning: true
   view:
+    formats:
+      json: true
     view_response_listener: 'force'

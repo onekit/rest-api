@@ -1,4 +1,29 @@
 {
+    "imagine/imagine": {
+        "version": "1.2.3"
+    },
+    "jms/metadata": {
+        "version": "2.3.0"
+    },
+    "league/flysystem": {
+        "version": "1.1.3"
+    },
+    "league/mime-type-detection": {
+        "version": "1.5.1"
+    },
+    "liip/imagine-bundle": {
+        "version": "1.8",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.8",
+            "ref": "5a5bdc2d0e2533ed6935d5ae562f2b318a8fc1ee"
+        },
+        "files": [
+            "config/packages/liip_imagine.yaml",
+            "config/routes/liip_imagine.yaml"
+        ]
+    },
     "nelmio/api-doc-bundle": {
         "version": "3.0",
         "recipe": {
@@ -24,6 +49,18 @@
             "config/packages/nelmio_cors.yaml"
         ]
     },
+    "oneup/flysystem-bundle": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "0eb87bba411c227da027fe5f7c1dc7954b02f242"
+        },
+        "files": [
+            "config/packages/oneup_flysystem.yaml"
+        ]
+    },
     "php": {
         "version": "7.3"
     },
@@ -33,8 +70,32 @@
     "symfony/expression-language": {
         "version": "v5.1.7"
     },
+    "symfony/mime": {
+        "version": "v5.1.7"
+    },
+    "symfony/polyfill-intl-idn": {
+        "version": "v1.18.1"
+    },
+    "symfony/process": {
+        "version": "v5.1.7"
+    },
+    "symfony/templating": {
+        "version": "v5.1.7"
+    },
     "symfony/twig-pack": {
         "version": "v1.0.0"
+    },
+    "vich/uploader-bundle": {
+        "version": "1.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.5",
+            "ref": "c4f5755b37fb65b9c6a3cbdae91205c15a137ed4"
+        },
+        "files": [
+            "config/packages/vich_uploader.yaml"
+        ]
     },
     "zircote/swagger-php": {
         "version": "3.1.0"

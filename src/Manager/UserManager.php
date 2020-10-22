@@ -8,22 +8,19 @@ use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
-use Symfony\Component\Security\Core\Security;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
-class UserManager
+class UserManager extends ApiManager
 {
     private $userRepository;
     private $em;
-    private $security;
     private $passwordEncoder;
     private $validator;
 
-    public function __construct(UserRepository $userRepository, EntityManagerInterface $em, Security $security, UserPasswordEncoderInterface $passwordEncoder, ValidatorInterface $validator)
+    public function __construct(UserRepository $userRepository, EntityManagerInterface $em, UserPasswordEncoderInterface $passwordEncoder, ValidatorInterface $validator)
     {
         $this->userRepository = $userRepository;
         $this->em = $em;
-        $this->security = $security;
         $this->passwordEncoder = $passwordEncoder;
         $this->validator = $validator;
     }
@@ -97,17 +94,6 @@ class UserManager
             $this->em->flush();
         }
         return $user;
-    }
-
-
-    protected function handleError($violations): array
-    {
-        $messages = [];
-        foreach ($violations as $constraint) {
-            $prop = $constraint->getPropertyPath();
-            $messages[$prop][] = $constraint->getMessage();
-        }
-        return $messages;
     }
 
 }

@@ -7,14 +7,16 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
+use Vich\UploaderBundle\Templating\Helper\UploaderHelper;
 
 class AppFixtures extends Fixture implements OrderedFixtureInterface
 {
     private $passwordEncoder;
-
-    public function __construct(UserPasswordEncoderInterface $passwordEncoder)
+    private $uploaderHelper;
+    public function __construct(UserPasswordEncoderInterface $passwordEncoder, UploaderHelper $uploaderHelper)
     {
         $this->passwordEncoder = $passwordEncoder;
+        $this->uploaderHelper = $uploaderHelper;
     }
 
     public function load(ObjectManager $manager)

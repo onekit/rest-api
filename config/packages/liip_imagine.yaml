@@ -1,0 +1,6 @@
+liip_imagine:
+    loaders:
+        profile_photos:
+            flysystem:
+                filesystem_service: oneup_flysystem.profile_photos_filesystem
+    data_loader: profile_photos
