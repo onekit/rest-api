@@ -1,0 +1,116 @@
+###
+POST http://1kit.net/api/login_check
+Content-Type: application/json
+
+{"username": "onekit@gmail.com", "password": "123321a"}
+> {%
+    client.global.set("auth_token", response.body.token);
+%}
+###
+GET http://1kit.net/api/users
+Authorization: Bearer {{auth_token}}
+Accept: application/json
+
+> {%
+    client.global.set("user_id", response.body[0].id);
+%}
+###
+
+GET http://1kit.net/api/users/{{user_id}}
+Authorization: Bearer {{auth_token}}
+Accept: application/json
+
+###
+
+PUT http://1kit.net/api/users/{{user_id}}
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "email": "onekit@gmail.com",
+  "password": "admin",
+  "firstName": "Alex",
+  "lastName": "Test",
+  "phone": "+375292193504"
+}
+
+###
+
+POST http://1kit.net/api/users
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "email": "ant@1kit.net",
+  "firstName": "Alexander",
+  "lastName": "Schumann",
+  "phone": "+375292193504",
+  "password": "admin"
+}
+
+> {%
+    client.global.set("new_id", response.body.id);
+%}
+###
+
+PUT http://1kit.net/api/users/{{new_id}}
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "email": "antarex@1kit.net",
+  "firstName": "Alexander",
+  "lastName": "Schumann",
+  "phone": "+375292193504",
+  "password": "admin"
+}
+
+###
+
+DELETE http://1kit.net/api/users/{{new_id}}
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{auth_token}}
+###
+
+POST http://1kit.net/api/pictures
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer {{auth_token}}
+
+--WebAppBoundary
+Content-Disposition: form-data; name="title";
+Content-Type: text/plain
+
+Title
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="example.jpg"
+Content-Type: image/jpeg
+
+< ./src/DataFixtures/example.jpg
+--WebAppBoundary--
+
+###
+POST http://1kit.net/api/pictures
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer {{auth_token}}
+
+--WebAppBoundary
+Content-Disposition: form-data; name="title";
+Content-Type: text/plain
+
+Beard
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="beard.jpg"
+Content-Type: image/jpeg
+
+< ./src/DataFixtures/beard.jpg
+--WebAppBoundary--
+
+
+###
+GET http://1kit.net/api/pictures
+Authorization: Bearer {{auth_token}}
+Accept: application/json
