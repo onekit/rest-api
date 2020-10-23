@@ -9,7 +9,6 @@ use App\Entity\Picture;
 use App\DTO\CreatePicture;
 use Doctrine\ORM\EntityManagerInterface;
 use Liip\ImagineBundle\Imagine\Cache\CacheManager;
-use Liip\ImagineBundle\Model\Binary;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Security\Core\Security;

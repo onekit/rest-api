@@ -34,6 +34,7 @@ class User implements UserInterface
      *      targetEntity="App\Entity\Picture",
      *      mappedBy="user", cascade={"persist","remove"}, orphanRemoval=true
      * )
+     * @Groups({"user_get", "Default"})
      */
     private $pictures = [];
 
@@ -52,7 +53,6 @@ class User implements UserInterface
     protected $email;
 
     /**
-     * @ORM\Column(type="json")
      * @Groups({"user_get", "Default"})
      */
     private $roles = [];

@@ -1,13 +1,13 @@
 ###
-POST http://1kit.net/api/login_check
+POST https://1kit.net/api/login_check
 Content-Type: application/json
 
-{"username": "onekit@gmail.com", "password": "123321a"}
+{"username": "onekit@gmail.com", "password": "admin"}
 > {%
     client.global.set("auth_token", response.body.token);
 %}
 ###
-GET http://1kit.net/api/users
+GET https://1kit.net/api/users
 Authorization: Bearer {{auth_token}}
 Accept: application/json
 
@@ -16,13 +16,13 @@ Accept: application/json
 %}
 ###
 
-GET http://1kit.net/api/users/{{user_id}}
+GET https://1kit.net/api/users/{{user_id}}
 Authorization: Bearer {{auth_token}}
 Accept: application/json
 
 ###
 
-PUT http://1kit.net/api/users/{{user_id}}
+PUT https://1kit.net/api/users/{{user_id}}
 Content-Type: application/json
 Accept: application/json
 Authorization: Bearer {{auth_token}}
@@ -37,7 +37,7 @@ Authorization: Bearer {{auth_token}}
 
 ###
 
-POST http://1kit.net/api/users
+POST https://1kit.net/api/users
 Content-Type: application/json
 Accept: application/json
 Authorization: Bearer {{auth_token}}
@@ -55,7 +55,7 @@ Authorization: Bearer {{auth_token}}
 %}
 ###
 
-PUT http://1kit.net/api/users/{{new_id}}
+PUT https://1kit.net/api/users/{{new_id}}
 Content-Type: application/json
 Accept: application/json
 Authorization: Bearer {{auth_token}}
@@ -70,13 +70,13 @@ Authorization: Bearer {{auth_token}}
 
 ###
 
-DELETE http://1kit.net/api/users/{{new_id}}
+DELETE https://1kit.net/api/users/{{new_id}}
 Content-Type: application/json
 Accept: application/json
 Authorization: Bearer {{auth_token}}
 ###
 
-POST http://1kit.net/api/pictures
+POST https://1kit.net/api/pictures
 Content-Type: multipart/form-data; boundary=WebAppBoundary
 Authorization: Bearer {{auth_token}}
 
@@ -93,7 +93,7 @@ Content-Type: image/jpeg
 --WebAppBoundary--
 
 ###
-POST http://1kit.net/api/pictures
+POST https://1kit.net/api/pictures
 Content-Type: multipart/form-data; boundary=WebAppBoundary
 Authorization: Bearer {{auth_token}}
 
@@ -111,6 +111,6 @@ Content-Type: image/jpeg
 
 
 ###
-GET http://1kit.net/api/pictures
+GET https://1kit.net/api/pictures
 Authorization: Bearer {{auth_token}}
 Accept: application/json
