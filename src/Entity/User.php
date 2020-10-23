@@ -53,6 +53,7 @@ class User implements UserInterface
     protected $email;
 
     /**
+     * @ORM\Column(type="json")
      * @Groups({"user_get", "Default"})
      */
     private $roles = [];
