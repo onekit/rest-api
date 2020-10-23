@@ -53,10 +53,10 @@ class User implements UserInterface
     protected $email;
 
     /**
-     * @ORM\Column(type="json_array")
+     * @ORM\Column(type="string")
      * @Groups({"user_get", "Default"})
      */
-    private $roles = [];
+    private $roles;
 
     /**
      * @var string The hashed password

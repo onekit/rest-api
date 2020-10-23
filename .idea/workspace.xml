@@ -3260,7 +3260,7 @@
       <workItem from="1603408482341" duration="7383000" />
       <workItem from="1603461229841" duration="1793000" />
       <workItem from="1603472969115" duration="504000" />
-      <workItem from="1603473520047" duration="8210000" />
+      <workItem from="1603473520047" duration="9649000" />
     </task>
     <task id="LOCAL-00001" summary="First initial commit with clear Symfony">
       <created>1602606168657</created>
@@ -3493,14 +3493,20 @@
       <option name="project" value="LOCAL" />
       <updated>1603495034388</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="update MariaDB support">
+      <created>1603495917549</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1603495917549</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="FOS REST View annotations for User controller" />
     <MESSAGE value="Fix provider in JWT" />
     <MESSAGE value="JWT" />
     <MESSAGE value="configs" />
@@ -3525,6 +3531,7 @@
     <MESSAGE value="HTTP tests for production" />
     <MESSAGE value="switch prod server to SSL" />
     <MESSAGE value="remove .env from repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove .env from repository" />
+    <MESSAGE value="update MariaDB support" />
+    <option name="LAST_COMMIT_MESSAGE" value="update MariaDB support" />
   </component>
 </project>
