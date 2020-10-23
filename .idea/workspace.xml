@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22d3fa87-6663-4c6e-ba35-9a49bc6f0b25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/routes/liip_imagine.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -3262,7 +3260,7 @@
       <workItem from="1603408482341" duration="7383000" />
       <workItem from="1603461229841" duration="1793000" />
       <workItem from="1603472969115" duration="504000" />
-      <workItem from="1603473520047" duration="7084000" />
+      <workItem from="1603473520047" duration="8210000" />
     </task>
     <task id="LOCAL-00001" summary="First initial commit with clear Symfony">
       <created>1602606168657</created>
@@ -3481,14 +3479,27 @@
       <option name="project" value="LOCAL" />
       <updated>1603493066434</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="switch prod server to SSL">
+      <created>1603494770615</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1603494770615</updated>
+    </task>
+    <task id="LOCAL-00033" summary="remove .env from repository">
+      <created>1603495034388</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1603495034388</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="FOS REST bundle enabling (in progress)" />
     <MESSAGE value="FOS REST View annotations for User controller" />
     <MESSAGE value="Fix provider in JWT" />
     <MESSAGE value="JWT" />
@@ -3513,6 +3524,7 @@
     <MESSAGE value="Upload pictures to user" />
     <MESSAGE value="HTTP tests for production" />
     <MESSAGE value="switch prod server to SSL" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch prod server to SSL" />
+    <MESSAGE value="remove .env from repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove .env from repository" />
   </component>
 </project>
