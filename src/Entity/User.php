@@ -18,7 +18,7 @@ use OpenApi\Annotations as OA;
  * @ORM\Entity(repositoryClass=UserRepository::class)
  * @UniqueEntity("email")
  * @ORM\HasLifecycleCallbacks
- * @ORM\Table(name="user")
+ * @ORM\Table(name="api_user")
  */
 class User implements UserInterface
 {
