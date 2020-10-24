@@ -40,10 +40,10 @@ Authorization: Bearer {{auth_token}}
 POST https://127.0.0.1:8080/api/users
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer {{auth_token}}
+#Authorization: Bearer {{auth_token}}
 
 {
-  "email": "ant@1kit.net",
+  "email": "ant@aaag1kit.net",
   "firstName": "Alexander",
   "lastName": "Schumann",
   "phone": "+375292193504",

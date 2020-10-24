@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\PersistentCollection;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Gedmo\Mapping\Annotation as Gedmo;
@@ -30,16 +31,6 @@ class User implements UserInterface
     private $id;
 
     /**
-     * @ORM\OneToMany(
-     *      targetEntity="App\Entity\Picture",
-     *      mappedBy="user", cascade={"persist","remove"}, orphanRemoval=true
-     * )
-     * @Groups({"user_get", "Default"})
-     */
-    private $pictures = [];
-
-
-    /**
      * @ORM\Column(type="string", length=180, unique=true)
      * @Groups({"user_get", "user_list", "Default"})
      * @Assert\NotNull()
@@ -53,10 +44,10 @@ class User implements UserInterface
     protected $email;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="json")
      * @Groups({"user_get", "Default"})
      */
-    private $roles;
+    private $roles = [];
 
     /**
      * @var string The hashed password
@@ -115,6 +106,14 @@ class User implements UserInterface
      */
     private $updated;
 
+    /**
+     * @ORM\OneToMany(
+     *      targetEntity="App\Entity\Picture",
+     *      mappedBy="user", cascade={"persist","remove"}, orphanRemoval=true
+     * )
+     * @Groups({"user_get"})
+     */
+    private $pictures;
 
     public function __construct()
     {
@@ -243,6 +242,22 @@ class User implements UserInterface
     public function getUpdated(): ?\DateTimeInterface
     {
         return $this->updated;
+    }
+
+    /**
+     * @return ArrayCollection|PersistentCollection
+     */
+    public function getPictures()
+    {
+        return $this->pictures;
+    }
+
+    /**
+     * @param PersistentCollection $pictures
+     */
+    public function setPictures(PersistentCollection $pictures): void
+    {
+        $this->pictures = $pictures;
     }
 
 }
